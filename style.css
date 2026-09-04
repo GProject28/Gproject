@@ -1697,61 +1697,82 @@ body{
 @media(max-width:768px){
 
     .desktopContactText{
-        display:none !important;
+        display:none;
     }
 
     .mobileBookText{
-        display:inline !important;
+        display:inline;
     }
 
 }
 
 /* =========================================================
-   MOBILE HERO — BOOK NOW BUTTON
-   PHONE ONLY
+   FINAL MOBILE HERO BOOK NOW
+   PHONE ONLY — DESKTOP UNCHANGED
 ========================================================= */
 
 @media (max-width:768px){
+
+    /* Hide View Portfolio on phones only */
+    .heroText .primaryBtn{
+        display:none !important;
+    }
+
+    /* Center the remaining Book Now button */
+    .heroButtons{
+        width:100% !important;
+        display:flex !important;
+        flex-direction:column !important;
+        align-items:center !important;
+        justify-content:center !important;
+        gap:0 !important;
+    }
 
     .heroText a.mobileBookNow{
         display:flex !important;
         align-items:center !important;
         justify-content:center !important;
 
-        width:100% !important;
+        width:240px !important;
+        max-width:240px !important;
         min-height:72px !important;
+
+        margin:25px auto 0 !important;
+        padding:16px 28px !important;
 
         background:#C8A46A !important;
         background-color:#C8A46A !important;
 
         color:#fff !important;
-
         border:2px solid #C8A46A !important;
         border-radius:50px !important;
 
         font-size:20px !important;
         font-weight:600 !important;
-
         text-decoration:none !important;
 
         box-shadow:0 10px 30px rgba(200,164,106,.35) !important;
 
         opacity:1 !important;
         visibility:visible !important;
-
-        transition:all .25s ease !important;
-    }
-
-    .heroText a.mobileBookNow:hover{
-        background:#C8A46A !important;
-        color:#fff !important;
     }
 
     .heroText a.mobileBookNow:active{
-        transform:scale(.97);
-        box-shadow:0 5px 18px rgba(200,164,106,.30) !important;
+        transform:scale(.97) !important;
     }
 
 }
 
+/* Smaller phones */
+@media (max-width:480px){
+
+    .heroText a.mobileBookNow{
+        width:230px !important;
+        max-width:230px !important;
+        min-height:68px !important;
+        margin-top:25px !important;
+        font-size:19px !important;
+    }
+
+}
 
