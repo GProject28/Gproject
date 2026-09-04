@@ -1697,39 +1697,61 @@ body{
 @media(max-width:768px){
 
     .desktopContactText{
-        display:none;
+        display:none !important;
     }
 
     .mobileBookText{
-        display:inline;
+        display:inline !important;
     }
 
 }
 
-@media(max-width:768px){
+/* =========================================================
+   MOBILE HERO — BOOK NOW BUTTON
+   PHONE ONLY
+========================================================= */
 
-    .heroBtn.mobileBookNow{
+@media (max-width:768px){
+
+    .heroText a.mobileBookNow{
+        display:flex !important;
+        align-items:center !important;
+        justify-content:center !important;
+
+        width:100% !important;
+        min-height:72px !important;
+
+        background:#C8A46A !important;
+        background-color:#C8A46A !important;
+
+        color:#fff !important;
+
+        border:2px solid #C8A46A !important;
+        border-radius:50px !important;
+
+        font-size:20px !important;
+        font-weight:600 !important;
+
+        text-decoration:none !important;
+
+        box-shadow:0 10px 30px rgba(200,164,106,.35) !important;
+
+        opacity:1 !important;
+        visibility:visible !important;
+
+        transition:all .25s ease !important;
+    }
+
+    .heroText a.mobileBookNow:hover{
         background:#C8A46A !important;
         color:#fff !important;
-        border:2px solid #C8A46A !important;
-
-        font-weight:600;
-        text-align:center;
-
-        box-shadow:
-            0 8px 25px rgba(200,164,106,.30);
-
-        transition:
-            transform .25s ease,
-            box-shadow .25s ease,
-            background .25s ease;
     }
 
-    .heroBtn.mobileBookNow:active{
+    .heroText a.mobileBookNow:active{
         transform:scale(.97);
-        box-shadow:
-            0 4px 15px rgba(200,164,106,.25);
+        box-shadow:0 5px 18px rgba(200,164,106,.30) !important;
     }
 
 }
+
 
