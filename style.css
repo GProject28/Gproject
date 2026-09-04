@@ -542,8 +542,8 @@ body{
 .heroText{
     left:25px;
     right:25px;
-    top:50%;
-    padding-top:10px;
+    top:60%;
+    padding-top:-10px;
 }
 
 .heroText h1{
@@ -1702,6 +1702,33 @@ body{
 
     .mobileBookText{
         display:inline;
+    }
+
+}
+
+@media(max-width:768px){
+
+    .heroBtn.mobileBookNow{
+        background:#C8A46A !important;
+        color:#fff !important;
+        border:2px solid #C8A46A !important;
+
+        font-weight:600;
+        text-align:center;
+
+        box-shadow:
+            0 8px 25px rgba(200,164,106,.30);
+
+        transition:
+            transform .25s ease,
+            box-shadow .25s ease,
+            background .25s ease;
+    }
+
+    .heroBtn.mobileBookNow:active{
+        transform:scale(.97);
+        box-shadow:
+            0 4px 15px rgba(200,164,106,.25);
     }
 
 }
