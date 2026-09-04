@@ -1199,3 +1199,180 @@ body{
 
 
 }
+
+
+/* =========================================================
+   MOBILE PACKAGE VIEWER
+   PHONE ONLY
+========================================================= */
+
+.mobilePackageViewer{
+    display:none;
+}
+
+
+/* =========================================================
+   MOBILE ONLY
+========================================================= */
+
+@media(max-width:768px){
+
+    .mobilePackageViewer{
+        position:fixed;
+        inset:0;
+        z-index:99999;
+
+        display:none;
+        align-items:center;
+        justify-content:center;
+
+        background:rgba(0,0,0,.96);
+
+        padding:20px;
+
+        touch-action:pan-y;
+    }
+
+    .mobilePackageViewer.active{
+        display:flex;
+    }
+
+    .mobilePackageViewer img{
+        display:block;
+
+        max-width:100%;
+        max-height:92vh;
+
+        width:auto;
+        height:auto;
+
+        object-fit:contain;
+
+        user-select:none;
+        -webkit-user-drag:none;
+
+        border-radius:4px;
+
+        transition:transform .25s ease;
+    }
+
+    /* CLOSE */
+
+    .packageViewerClose{
+        position:absolute;
+
+        top:18px;
+        right:18px;
+
+        width:46px;
+        height:46px;
+
+        border:0;
+        border-radius:50%;
+
+        background:rgba(255,255,255,.15);
+        color:#fff;
+
+        font-size:22px;
+
+        display:flex;
+        align-items:center;
+        justify-content:center;
+
+        z-index:5;
+
+        cursor:pointer;
+    }
+
+    /* PREVIOUS / NEXT */
+
+    .packageViewerPrev,
+    .packageViewerNext{
+
+        position:absolute;
+
+        top:50%;
+        transform:translateY(-50%);
+
+        width:46px;
+        height:46px;
+
+        border:0;
+        border-radius:50%;
+
+        background:rgba(255,255,255,.15);
+        color:#fff;
+
+        font-size:20px;
+
+        display:flex;
+        align-items:center;
+        justify-content:center;
+
+        z-index:5;
+
+        cursor:pointer;
+    }
+
+    .packageViewerPrev{
+        left:12px;
+    }
+
+    .packageViewerNext{
+        right:12px;
+    }
+
+    .packageViewerClose:active,
+    .packageViewerPrev:active,
+    .packageViewerNext:active{
+        transform:scale(.92);
+    }
+
+    .packageViewerPrev:active,
+    .packageViewerNext:active{
+        transform:translateY(-50%) scale(.92);
+    }
+
+    /* HIDE BACKGROUND SCROLL */
+
+    body.packageViewerOpen{
+        overflow:hidden;
+    }
+
+}
+
+
+/* =========================================================
+   VERY SMALL PHONES
+========================================================= */
+
+@media(max-width:480px){
+
+    .mobilePackageViewer{
+        padding:12px;
+    }
+
+    .packageViewerClose{
+        top:12px;
+        right:12px;
+        width:42px;
+        height:42px;
+        font-size:20px;
+    }
+
+    .packageViewerPrev,
+    .packageViewerNext{
+        width:40px;
+        height:40px;
+        font-size:17px;
+    }
+
+    .packageViewerPrev{
+        left:8px;
+    }
+
+    .packageViewerNext{
+        right:8px;
+    }
+
+}
