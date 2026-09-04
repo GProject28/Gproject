@@ -138,34 +138,130 @@ document.addEventListener("keydown",(e)=>{
 });
 
 // =========================
-// TOUCH SWIPE
+// MOBILE FACEBOOK-STYLE SWIPE
+// PHONE ONLY
 // =========================
 
 let touchStartX = 0;
-let touchEndX = 0;
+let touchCurrentX = 0;
+let isDragging = false;
+
+function isMobile(){
+
+    return window.matchMedia("(max-width:768px)").matches;
+
+}
+
+
+// =========================
+// TOUCH START
+// =========================
 
 lightbox.addEventListener("touchstart", (e) => {
 
+    if(!isMobile()) return;
+
     touchStartX = e.touches[0].clientX;
+    touchCurrentX = touchStartX;
 
-});
+    isDragging = true;
 
-lightbox.addEventListener("touchend", (e) => {
+    lightboxImg.style.transition = "none";
 
-    touchEndX = e.changedTouches[0].clientX;
+}, { passive:true });
 
-    const distance = touchStartX - touchEndX;
 
-    if(Math.abs(distance) < 60) return;
+// =========================
+// TOUCH MOVE
+// =========================
 
-    if(distance > 0){
+lightbox.addEventListener("touchmove", (e) => {
 
-        nextImage();
+    if(!isMobile() || !isDragging) return;
 
-    }else{
+    touchCurrentX = e.touches[0].clientX;
 
-        prevImage();
+    const distance = touchCurrentX - touchStartX;
+
+    /*
+       IMAGE FOLLOWS YOUR FINGER
+    */
+
+    lightboxImg.style.transform =
+        `translateX(${distance}px)`;
+
+}, { passive:true });
+
+
+// =========================
+// TOUCH END
+// =========================
+
+lightbox.addEventListener("touchend", () => {
+
+    if(!isMobile() || !isDragging) return;
+
+    isDragging = false;
+
+    const distance = touchCurrentX - touchStartX;
+
+    const threshold = window.innerWidth * 0.20;
+
+
+    // =========================
+    // SWIPE LEFT → NEXT
+    // =========================
+
+    if(distance < -threshold){
+
+        lightboxImg.style.transition =
+            "transform .25s ease";
+
+        lightboxImg.style.transform =
+            "translateX(-100vw)";
+
+        setTimeout(() => {
+
+            nextImage();
+
+        }, 180);
 
     }
 
-});
+
+    // =========================
+    // SWIPE RIGHT → PREVIOUS
+    // =========================
+
+    else if(distance > threshold){
+
+        lightboxImg.style.transition =
+            "transform .25s ease";
+
+        lightboxImg.style.transform =
+            "translateX(100vw)";
+
+        setTimeout(() => {
+
+            prevImage();
+
+        }, 180);
+
+    }
+
+
+    // =========================
+    // NOT ENOUGH → RETURN
+    // =========================
+
+    else{
+
+        lightboxImg.style.transition =
+            "transform .25s ease";
+
+        lightboxImg.style.transform =
+            "translateX(0)";
+
+    }
+
+}, { passive:true });

@@ -637,3 +637,38 @@ grid-column:span 2;
     border:0;
     display:block;
 }
+
+/* =========================================
+   MOBILE GALLERY — PHONE ONLY
+========================================= */
+
+@media (max-width:768px){
+
+    .prevBtn,
+    .nextBtn{
+        display:none !important;
+        visibility:hidden !important;
+        pointer-events:none !important;
+    }
+
+    .lightbox{
+        touch-action:pan-y;
+        overflow:hidden;
+    }
+
+    #lightboxImg{
+        width:100vw;
+        max-width:100vw;
+        max-height:85vh;
+
+        object-fit:contain;
+
+        user-select:none;
+        -webkit-user-select:none;
+        -webkit-user-drag:none;
+git add -A && git commit -m "Update Gallery Proj website" && git push origin main
+        will-change:transform;
+    }
+
+}
+
