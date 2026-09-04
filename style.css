@@ -540,12 +540,10 @@ body{
 }
 
 .heroText{
-
     left:25px;
     right:25px;
-       top:55%;
-    padding-top:40px;
-
+    top:43%;
+    padding-top:20px;
 }
 
 .heroText h1{
