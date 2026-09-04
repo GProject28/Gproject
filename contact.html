@@ -1,0 +1,746 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+<title>Contact | Gallery Proj.</title>
+
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+
+<link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&family=Playfair+Display:wght@600;700;800&display=swap" rel="stylesheet">
+
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.2/css/all.min.css">
+
+<link rel="stylesheet" href="style.css">
+<link rel="stylesheet" href="contact.css">
+
+</head>
+
+<body>
+
+    <header class="navbar">
+
+    <a href="index.html" class="logoBox">
+
+        <img src="images/Logo1.png" class="logo" alt="Gallery Proj.">
+
+    </a>
+
+    <nav class="desktopMenu">
+
+        <a href="index.html">Home</a>
+
+        <a href="index.html#portfolio">Portfolio</a>
+
+        <a href="services.html">Services</a>
+
+        <a href="about.html" class="active">About</a>
+
+        <a href="faq.html">FAQ</a>
+
+        <a href="contact.html" class="active">Contact</a>
+
+<a href="contact.html#bookingForm" class="bookBtn">
+    Book Now
+</a>
+
+    </nav>
+    <button class="menuToggle" onclick="toggleMenu()">
+
+        <i class="fa-solid fa-bars"></i>
+
+    </button>
+
+</header>
+
+<!-- ============== MOBILE MENU ============== -->
+
+<div class="mobileMenu" id="mobileMenu">
+
+    <div class="mobileHeader">
+
+        <img src="images/Logo1.png" class="mobileLogo">
+
+        <button class="closeBtn" onclick="toggleMenu()">
+
+            <i class="fa-solid fa-xmark"></i>
+
+        </button>
+
+    </div>
+
+    <div class="mobileLinks">
+
+        <a href="index.html" onclick="toggleMenu()">Home</a>
+
+        <a href="index.html#portfolio" onclick="toggleMenu()">Portfolio</a>
+
+        <a href="services.html" onclick="toggleMenu()">Services</a>
+
+        <a href="about.html" onclick="toggleMenu()">About</a>
+
+        <a href="faq.html" onclick="toggleMenu()">FAQ</a>
+
+        <a href="contact.html" onclick="toggleMenu()">Contact</a>
+
+    </div>
+
+<a href="contact.html#bookingForm"
+   class="mobileBook"
+   onclick="toggleMenu()">
+    <span>Book Now</span>
+    <i class="fa-solid fa-arrow-right"></i>
+</a>
+
+</div>
+    <!-- ================= CONTACT HERO ================= -->
+
+<section class="contactHero">
+
+    <img src="images/G1.jpg" class="contactHeroImg">
+
+    <div class="contactOverlay"></div>
+
+    <div class="contactHeroText">
+
+        <span>CONTACT US</span>
+
+        <h1>
+
+            Let's Bring
+            Your Vision
+            To Life.
+
+        </h1>
+
+        <p>
+
+            We'd love to hear your story.
+            Whether it's a wedding, portrait,
+            family session, or special event,
+            we're here to capture every moment.
+
+        </p>
+
+    </div>
+
+</section>
+
+<!-- ================= CONTACT INFO ================= -->
+
+<section class="contactInfoSection">
+
+    <div class="contactInfoGrid">
+
+        <div class="contactInfoCard">
+
+            <div class="contactIcon">
+
+                <i class="fa-solid fa-location-dot"></i>
+
+            </div>
+
+            <h3>Visit Our Studio</h3>
+
+            <p>
+
+                The Gallery Project | Capitol Drive, San Jose, Balanga City, Bataan
+
+            </p>
+
+        </div>
+
+        <div class="contactInfoCard">
+
+            <div class="contactIcon">
+
+                <i class="fa-solid fa-phone"></i>
+
+            </div>
+
+            <h3>Call Us</h3>
+
+            <p>
+
+                0905 567 8333
+
+            </p>
+
+        </div>
+
+        <div class="contactInfoCard">
+
+            <div class="contactIcon">
+
+                <i class="fa-solid fa-envelope"></i>
+
+            </div>
+
+            <h3>Email Us</h3>
+
+            <p>
+
+                filmsgproject@gmail.com
+
+            </p>
+
+        </div>
+
+        <div class="contactInfoCard">
+
+            <div class="contactIcon">
+
+                <i class="fa-solid fa-camera-retro"></i>
+
+            </div>
+
+            <h3>Follow Us</h3>
+
+            <p>
+
+                Facebook • Instagram • TikTok
+
+            </p>
+
+        </div>
+
+    </div>
+
+</section>
+
+<section id="bookingForm" class="contactFormSection">
+
+    <div class="contactFormWrapper">
+
+        <!-- LEFT -->
+        <div class="contactFormBox">
+
+            <span>START YOUR BOOKING</span>
+
+            <h2>Let's Capture Your Story</h2>
+
+            <form id="contactForm">
+
+    <!-- ================= CUSTOMER ================= -->
+
+    <div class="inputRow">
+
+        <input
+            type="text"
+            id="name"
+            placeholder="Full Name"
+            required>
+
+        <input
+            type="text"
+            id="phone"
+            placeholder="Phone Number"
+            required>
+
+    </div>
+
+    <div class="inputRow">
+
+        <input
+            type="email"
+            id="email"
+            placeholder="Email Address"
+            required>
+
+       <select id="session" name="session" required>
+
+    <option value="" selected disabled>Select Session</option>
+
+    <!-- STUDIO SPACE RENTAL -->
+    <optgroup label="Studio Space Rental">
+        <option value="Studio Space Rental — ₱1,599/hr">
+            Studio Space Rental — ₱1,599/hr (minimum 2 hours)
+        </option>
+    </optgroup>
+
+    <!-- SELF-SHOOT STUDIO -->
+    <optgroup label="Self-Shoot Studio">
+        <option value="Self-Shoot Studio — Classic — ₱449">
+            Classic — ₱449
+        </option>
+        <option value="Self-Shoot Studio — Prime — ₱699">
+            Prime — ₱699
+        </option>
+        <option value="Self-Shoot Studio — Portrait — ₱899">
+            Portrait — ₱899
+        </option>
+        <option value="Self-Shoot Studio — Icon — ₱1,049">
+            Icon — ₱1,049
+        </option>
+    </optgroup>
+
+    <!-- ADULT BIRTHDAY -->
+    <optgroup label="Adult Birthday Session">
+        <option value="Adult Birthday — Package I — ₱3,000">
+            Package I — ₱3,000
+        </option>
+        <option value="Adult Birthday — Package II — ₱5,199">
+            Package II — ₱5,199
+        </option>
+        <option value="Adult Birthday — Package III — ₱6,999">
+            Package III — ₱6,999
+        </option>
+    </optgroup>
+
+    <!-- 7TH BIRTHDAY -->
+    <optgroup label="7th Birthday Session">
+        <option value="7th Birthday — Package I — ₱2,599">
+            Package I — ₱2,599
+        </option>
+        <option value="7th Birthday — Package II — ₱4,199">
+            Package II — ₱4,199
+        </option>
+        <option value="7th Birthday — Package III — ₱5,499">
+            Package III — ₱5,499
+        </option>
+    </optgroup>
+
+    <!-- FAMILY PORTRAIT -->
+    <optgroup label="Family Portrait">
+        <option value="Family Portrait — Package I — ₱3,000">
+            Package I — ₱3,000
+        </option>
+        <option value="Family Portrait — Package II — ₱6,000">
+            Package II — ₱6,000
+        </option>
+    </optgroup>
+
+    <!-- SOLO PORTRAIT -->
+    <optgroup label="Solo Portrait">
+        <option value="Solo Portrait — Package I — ₱2,599">
+            Package I — ₱2,599
+        </option>
+        <option value="Solo Portrait — Package II — ₱4,199">
+            Package II — ₱4,199
+        </option>
+        <option value="Solo Portrait — Package III — ₱5,199">
+            Package III — ₱5,199
+        </option>
+    </optgroup>
+
+    <!-- BARKADA SHOOT -->
+    <optgroup label="Barkada Shoot">
+        <option value="Barkada Shoot — Package I — ₱2,499">
+            Package I — ₱2,499
+        </option>
+        <option value="Barkada Shoot — Package II — ₱4,499">
+            Package II — ₱4,499
+        </option>
+        <option value="Barkada Shoot — Package III — ₱5,499">
+            Package III — ₱5,499
+        </option>
+    </optgroup>
+
+    <!-- PERFORMING ARTS -->
+    <optgroup label="Performing Arts Session">
+        <option value="Performing Arts — Package I — ₱5,000">
+            Package I — ₱5,000
+        </option>
+        <option value="Performing Arts — Package II — ₱7,199">
+            Package II — ₱7,199
+        </option>
+        <option value="Performing Arts — Package III — ₱8,999">
+            Package III — ₱8,999
+        </option>
+    </optgroup>
+
+    <!-- COUPLE SHOOT -->
+    <optgroup label="Couple Shoot">
+        <option value="Couple Shoot — Package I — ₱3,499">
+            Package I — ₱3,499
+        </option>
+        <option value="Couple Shoot — Package II — ₱4,999">
+            Package II — ₱4,999
+        </option>
+        <option value="Couple Shoot — Package III — ₱6,499">
+            Package III — ₱6,499
+        </option>
+    </optgroup>
+
+</select>
+
+    </div>
+
+    <!-- ================= DATE & TIME ================= -->
+
+    <div class="inputRow">
+
+        <div class="dateField">
+
+            <input
+                type="date"
+                id="date"
+                required>
+
+            <span id="datePlaceholder">
+
+                Preferred Date
+
+            </span>
+
+        </div>
+
+       <select id="startTime" name="startTime" required>
+    <option value="" selected disabled>Select Start Time</option>
+
+ <option value="08:00">08:00 AM</option>
+<option value="09:00">09:00 AM</option>
+<option value="10:00">10:00 AM</option>
+<option value="11:00">11:00 AM</option>
+<option value="12:00">12:00 PM</option>
+<option value="13:00">01:00 PM</option>
+<option value="14:00">02:00 PM</option>
+<option value="15:00">03:00 PM</option>
+<option value="16:00">04:00 PM</option>
+<option value="17:00">05:00 PM</option>
+<option value="18:00">06:00 PM</option>
+<option value="19:00">07:00 PM</option>
+</select>
+
+<select id="endTime" name="endTime" required>
+    <option value="" selected disabled>Select End Time</option>
+<option value="09:00">09:00 AM</option>
+<option value="10:00">10:00 AM</option>
+<option value="11:00">11:00 AM</option>
+<option value="12:00">12:00 PM</option>
+<option value="13:00">01:00 PM</option>
+<option value="14:00">02:00 PM</option>
+<option value="15:00">03:00 PM</option>
+<option value="16:00">04:00 PM</option>
+<option value="17:00">05:00 PM</option>
+<option value="18:00">06:00 PM</option>
+<option value="19:00">07:00 PM</option>
+<option value="20:00">08:00 PM</option>
+</select>
+        <div id="availabilityMessage" class="formMessage"></div>
+
+    </div>
+                <!-- ================= PAYMENT ================= -->
+
+                <div class="payment-notice">
+    <h4>Booking Confirmation</h4>
+
+    <p>✔ <strong>50% Down Payment Required</strong></p>
+
+    <p>✔ Secure your preferred schedule</p>
+
+    <p>✔ Remaining balance payable on the day of your session</p>
+</div>
+
+                <div class="fullRow">
+
+                    <select
+                        id="paymentMethod"
+                        required>
+
+                        <option value="">Select Payment Method</option>
+
+                        <option value="GCash">GCash</option>
+
+                        <option value="Bank Transfer">Bank Transfer</option>
+
+                    </select>
+
+                </div>
+
+                <!-- ================= GCash ================= -->
+
+                <div
+                    id="proofSection"
+                    class="proofBox"
+                    style="display:none;">
+
+                    <div class="paymentNotice">
+
+                        <h4>Reservation Fee Required</h4>
+
+                        <p>
+
+                            Please scan the QR Code below to pay the reservation fee,
+                            then upload your proof of payment.
+
+                        </p>
+
+                    </div>
+
+                    <div class="gcashQR">
+
+                        <img
+                            src="images/gcash-qr.jpg"
+                            alt="GCash QR Code">
+
+                    </div>
+
+                </div>
+
+                <!-- ================= BANK ================= -->
+
+                <div
+                    id="bankSection"
+                    class="proofBox"
+                    style="display:none;">
+
+                    <div class="paymentNotice">
+
+                        <h4>Reservation Fee Required</h4>
+
+                        <p>
+
+                            Please scan the QR Code below to pay the reservation fee,
+                            then upload your proof of payment.
+
+                        </p>
+
+                    </div>
+
+                    <div class="gcashQR">
+
+                        <img
+                            src="images/bank-qr.jpg"
+                            alt="Bank Transfer QR Code">
+
+                    </div>
+
+                </div>
+
+                <!-- ================= UPLOAD ================= -->
+
+                <div class="fullRow">
+
+                    <label
+                        for="proofFile"
+                        class="uploadLabel">
+
+                        Upload Proof of Payment
+
+                    </label>
+
+                    <input
+                        type="file"
+                        id="proofFile"
+                        accept="image/*,.pdf"
+                        required>
+
+                    <small>
+
+                        Accepted file types:
+                        JPG, PNG or PDF
+
+                    </small>
+
+                </div>
+
+                <!-- ================= MESSAGE ================= -->
+
+                <div class="fullRow">
+
+                    <textarea
+                        id="message"
+                        placeholder="Share your ideas or special requests..."
+                        required></textarea>
+
+                </div>
+
+                <!-- ================= STATUS ================= -->
+
+                <div
+                    id="formMessage"
+                    class="formMessage">
+
+                </div>
+
+                <!-- ================= SUBMIT ================= -->
+
+                <button
+                    type="submit"
+                    id="submitBtn">
+
+                    Book Now
+
+                </button>
+
+            </form>
+
+        </div>
+
+        <div class="booking-map">
+
+        <iframe
+            src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3859.6381967631487!2d120.52954917642826!3d14.67646243867539!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x3396418542378e59%3A0xcb56b7bd5789bce4!2sGallery%20proj.!5e0!3m2!1sen!2sph!4v1783493714135!5m2!1sen!2sph"
+            loading="lazy"
+            allowfullscreen>
+        </iframe>
+
+        <div class="map-info">
+            <h3>Gallery Proj.</h3>
+            <p>Capitol Drive, San Jose, Balanga City, Bataan</p>
+        </div>
+
+    </div>
+
+</section>
+
+    </div>
+
+</section>
+<!-- ================= GOOGLE MAP ================= -->
+
+
+
+<!-- ================= CTA ================= -->
+
+<section class="cta">
+
+    <h2>Ready to Capture Your Story?</h2>
+
+    <p>
+        Let's create timeless memories together.
+        Book your photography session today.
+    </p>
+
+ <a href="contact.html#bookingForm" class="ctaBtn">
+    Book Now
+</a>
+
+</section>
+<!-- ================= FOOTER ================= -->
+
+<footer class="footer">
+
+    <div class="footerContainer">
+
+        <div class="footerBrand">
+
+            <img src="images/Logo1.png" alt="Gallery Proj.">
+
+            <h3>Gallery Proj.</h3>
+
+            <p>
+                Luxury Photography & Videography Studio specializing in Studio Sessions, Wedding Films, Wedding Photography, Birthdays, Corporate Events, and Debut Celebrations.
+            </p>
+
+        </div>
+
+      <div class="footerLinks">
+
+    <h4>Quick Links</h4>
+
+    <a href="index.html">Home</a>
+
+    <a href="index.html#portfolio">Portfolio</a>
+
+    <a href="services.html">Services</a>
+
+    <a href="index.html#about">About</a>
+
+    <a href="faq.html">FAQ</a>
+
+    <a href="contact.html">Contact</a>
+
+</div>
+
+        <div class="footerFollow">
+
+            <h4>Follow Us</h4>
+
+            <a href="https://www.facebook.com/thegalleryproj" target="_blank">
+                <i class="fab fa-facebook-f"></i> Facebook
+            </a>
+
+            <a href="https://www.instagram.com/gallery.proj/" target="_blank">
+                <i class="fab fa-instagram"></i> Instagram
+            </a>
+
+            <a href="https://www.tiktok.com/@gallery.proj" target="_blank">
+                <i class="fab fa-tiktok"></i> TikTok
+            </a>
+
+        </div>
+
+    </div>
+
+ <div class="footerBottom">
+
+    <p>© 2026 Gallery Proj. All Rights Reserved.</p>
+
+    <p>
+        Designed &amp; Developed by
+        <span>Mark Darryl Lacerna</span>
+    </p>
+
+</div>
+
+</footer>
+
+<!-- ================= LIGHTBOX ================= -->
+
+<div class="lightbox" id="lightbox">
+
+    <span class="closeLightbox">&times;</span>
+
+    <button class="prevBtn">&#10094;</button>
+
+    <img id="lightboxImg">
+
+    <button class="nextBtn">&#10095;</button>
+
+</div>
+
+<!-- ================= SUCCESS MODAL ================= -->
+
+<div class="successModal" id="successModal">
+
+    <div class="successBox">
+
+        <div class="successIcon">
+
+            <i class="fa-solid fa-circle-check"></i>
+
+        </div>
+
+        <h2>Booking Request Sent!</h2>
+
+        <p>
+
+            Thank you for contacting <strong>Gallery Proj.</strong><br>
+            We've successfully received your booking request.
+
+        </p>
+
+        <div class="referenceBox">
+
+            Reference No.<br>
+
+            <strong id="referenceNo"></strong>
+
+        </div>
+
+      <button
+    type="button"
+    onclick="closeSuccessModal(event)">
+
+    Awesome!
+
+</button>
+
+    </div>
+
+</div>
+
+<script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
+<script src="gallery.js"></script>
+<script src="app.js"></script>
+<script src="contact.js?v=999"></script>
+<script src="https://cdn.jsdelivr.net/npm/sweetalert2@11"></script>
+</body>
+
+</html>

@@ -1,0 +1,252 @@
+/* =========================================================
+   GALLERY PROJ. — ABOUT PAGE
+   Editorial / Dark Green Layout
+========================================================= */
+
+
+/* =========================================================
+   PAGE BACKGROUND
+========================================================= */
+.aboutPage{
+    position:relative;
+
+    width:100%;
+    max-width:none;
+
+    margin:0;
+
+    /* SPACE BELOW NAVBAR */
+    padding:150px 0 90px;
+
+    overflow:hidden;
+
+    background:
+        radial-gradient(
+            circle at 50% 15%,
+            rgba(95,125,45,.20),
+            transparent 35%
+        ),
+        radial-gradient(
+            circle at 15% 70%,
+            rgba(72,105,35,.12),
+            transparent 30%
+        ),
+        #071500;
+}
+
+/* =========================================================
+   SUBTLE GRID BACKGROUND
+========================================================= */
+
+.aboutPage::before{
+    content:"";
+
+    position:absolute;
+
+    inset:0;
+
+    pointer-events:none;
+
+    background-image:
+        linear-gradient(
+            rgba(255,255,255,.035) 1px,
+            transparent 1px
+        ),
+        linear-gradient(
+            90deg,
+            rgba(255,255,255,.035) 1px,
+            transparent 1px
+        );
+
+    background-size:40px 40px;
+
+    opacity:.45;
+}
+
+
+/* =========================================================
+   GLOW
+========================================================= */
+
+.aboutPage::after{
+    content:"";
+
+    position:absolute;
+
+    width:700px;
+    height:700px;
+
+    top:250px;
+    left:50%;
+
+    transform:translateX(-50%);
+
+    background:rgba(79,115,40,.08);
+
+    filter:blur(120px);
+
+    border-radius:50%;
+
+    pointer-events:none;
+}
+
+
+/* =========================================================
+   IMAGE SECTIONS
+========================================================= */
+
+.aboutImageSection{
+    position:relative;
+
+    z-index:2;
+
+    width:min(1080px,92%);
+
+    margin:0 auto 35px;
+
+    padding:10px;
+
+    border:1px solid rgba(210,178,105,.28);
+
+    border-radius:20px;
+
+    background:
+        linear-gradient(
+            145deg,
+            rgba(255,255,255,.025),
+            rgba(255,255,255,.005)
+        );
+
+    box-shadow:
+        0 30px 80px rgba(0,0,0,.35),
+        inset 0 0 40px rgba(255,255,255,.015);
+}
+
+
+/* =========================================================
+   IMAGE
+========================================================= */
+
+.aboutPageImage{
+    display:block;
+
+    width:100%;
+    max-width:100%;
+
+    height:auto;
+
+    margin:0;
+
+    border-radius:13px;
+
+    object-fit:contain;
+
+    box-shadow:
+        0 15px 45px rgba(0,0,0,.25);
+}
+
+
+/* =========================================================
+   TEAM SECTION
+========================================================= */
+
+.teamImageSection{
+    margin-top:35px;
+    margin-bottom:0;
+}
+
+
+/* =========================================================
+   HOVER
+========================================================= */
+
+.aboutImageSection{
+    transition:
+        transform .45s ease,
+        border-color .45s ease,
+        box-shadow .45s ease;
+}
+
+.aboutImageSection:hover{
+    transform:translateY(-4px);
+
+    border-color:rgba(216,178,110,.48);
+
+    box-shadow:
+        0 35px 90px rgba(0,0,0,.42),
+        inset 0 0 50px rgba(255,255,255,.02);
+}
+
+
+/* =========================================================
+   CTA AREA
+========================================================= */
+
+.aboutPage + .cta{
+    position:relative;
+
+    z-index:3;
+
+    background:#091803;
+
+    border-top:1px solid rgba(216,178,110,.16);
+    border-bottom:1px solid rgba(216,178,110,.16);
+}
+
+
+/* =========================================================
+   MOBILE
+========================================================= */
+
+@media(max-width:768px){
+
+    .aboutPage{
+        padding:100px 0 8ch;
+    }
+
+    .aboutImageSection{
+        width:94%;
+
+        margin-bottom:22px;
+
+        padding:6px;
+
+        border-radius:15px;
+    }
+
+    .aboutPageImage{
+        width:100%;
+
+        border-radius:10px;
+    }
+
+    .teamImageSection{
+        margin-top:22px;
+    }
+
+}
+
+
+/* =========================================================
+   SMALL MOBILE
+========================================================= */
+
+@media(max-width:480px){
+
+    .aboutPage{
+        padding:90px 0 50px;
+    }
+
+    .aboutImageSection{
+        width:94%;
+
+        padding:5px;
+
+        border-radius:13px;
+    }
+
+    .aboutPageImage{
+        border-radius:9px;
+    }
+
+}

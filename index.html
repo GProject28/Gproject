@@ -1,0 +1,571 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+<title>Gallery Proj.</title>
+
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+
+<link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&family=Playfair+Display:wght@600;700;800&display=swap" rel="stylesheet">
+
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.2/css/all.min.css">
+<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css">
+<link rel="stylesheet" href="style.css">
+
+</head>
+
+<body>
+
+    
+
+<!-- ================= NAVBAR ================= -->
+
+<header class="navbar">
+
+    <a href="#" class="logoBox">
+
+        <img src="images/Logo1.png" class="logo" alt="G Project Logo">
+
+    </a>
+
+    <nav class="desktopMenu">
+
+      <a href="index.html">Home</a>
+
+    <a href="index.html#portfolio">Portfolio</a>
+
+    <a href="services.html">Services</a>
+
+    <a href="about.html">About</a>
+
+    <a href="faq.html">FAQ</a>
+
+    <a href="contact.html">Contact</a>
+
+<a href="contact.html#bookingForm" class="bookBtn">
+    Book Now
+</a>
+
+    </nav>
+
+    <button class="menuToggle" onclick="toggleMenu()">
+
+        <i class="fa-solid fa-bars"></i>
+
+    </button>
+
+</header>
+
+<!-- ============== MOBILE MENU ============== -->
+
+<div class="mobileMenu" id="mobileMenu">
+
+    <div class="mobileHeader">
+
+        <img src="images/Logo1.png" class="mobileLogo">
+
+        <button class="closeBtn" onclick="toggleMenu()">
+
+            <i class="fa-solid fa-xmark"></i>
+
+        </button>
+
+    </div>
+
+    <div class="mobileLinks">
+
+      <a href="index.html" onclick="toggleMenu()">Home</a>
+
+    <a href="index.html#portfolio" onclick="toggleMenu()">Portfolio</a>
+
+    <a href="services.html" onclick="toggleMenu()">Services</a>
+
+  <a href="about.html" onclick="toggleMenu()">About</a>
+
+    <a href="faq.html" onclick="toggleMenu()">FAQ</a>
+
+    <a href="contact.html" onclick="toggleMenu()">Contact</a>
+
+</div>
+
+<a href="contact.html#bookingForm"
+   class="mobileBook"
+   onclick="toggleMenu()">
+    <span>Book Now</span>
+    <i class="fa-solid fa-arrow-right"></i>
+</a>
+
+    <div class="socials">
+
+        <a href="#"><i class="fab fa-facebook-f"></i></a>
+
+        <a href="#"><i class="fab fa-instagram"></i></a>
+
+        <a href="#"><i class="fab fa-tiktok"></i></a>
+
+    </div>
+
+</div>
+
+<!-- ================= HERO ================= -->
+
+<section class="hero" id="home">
+
+    <img src="images/G1.jpg" class="heroImage" alt="Photography Studio">
+
+    <div class="overlay"></div>
+
+    <div class="heroText">
+
+     <div class="welcomeTag">
+
+    <span class="line"></span>
+
+    <span class="welcomeText">
+        WELCOME TO
+    </span>
+
+    <span class="line"></span>
+
+</div>
+
+<h4 class="studioName">
+
+    Gallery Proj.
+
+</h4>
+
+        <h1>
+
+            Capture<br>
+
+            Moments<br>
+
+            That Last<br>
+
+            Forever.
+
+        </h1>
+
+        <p>
+
+            Luxury Photography & Videography Studio specializing in Studio Sessions, Wedding Films, Wedding Photography, Birthdays, Corporate Events, and Debut Celebrations.
+
+        </p>
+
+        <div class="heroButtons">
+
+            <a href="#portfolio" class="primaryBtn">
+
+                View Portfolio
+
+            </a>
+
+            <a href="contact.html" class="secondaryBtn">
+
+                Contact Us
+
+            </a>
+
+        </div>
+
+        <div class="scrollDown">
+
+            <span>↓</span>
+
+            Scroll Down
+
+        </div>
+
+    </div>
+
+</section>
+
+<!-- ================= PORTFOLIO ================= -->
+
+<section class="portfolio" id="portfolio">
+
+    <div class="section-title">
+
+        <div class="title-line"></div>
+
+        <span>OUR PORTFOLIO</span>
+
+        <h2>
+            Explore Our
+            <em>Galleries</em>
+        </h2>
+
+        <p>
+            Every gallery tells a unique story. Browse our collections and
+            experience timeless moments captured with passion, creativity,
+            and elegance.
+        </p>
+
+    </div>
+
+  <div class="portfolioGrid">
+
+    <!-- Fine Art Photography -->
+    <a href="fineart.html" class="portfolioCard">
+
+        <img src="images/FineArt1.jpg" alt="Fine Art">
+
+        <div class="portfolioOverlay">
+
+            <h3>Fine Art Photography</h3>
+
+            <p>Creative Portraits • Editorial • Fine Art</p>
+
+            <span>View Gallery →</span>
+
+        </div>
+
+    </a>
+
+    <!-- Studio Session -->
+    <a href="studio.html" class="portfolioCard">
+
+        <img src="images/G1.jpg" alt="Studio Session">
+
+        <div class="portfolioOverlay">
+
+            <h3>Studio Session</h3>
+
+            <p>Indoor • Portrait • Branding</p>
+
+            <span>View Gallery →</span>
+
+        </div>
+
+    </a>
+
+    <!-- Wedding Films -->
+    <a href="wedding-films.html" class="portfolioCard">
+
+        <img src="images/Eon & Angel THUMB.jpg" alt="Wedding Films">
+
+        <div class="portfolioOverlay">
+
+            <h3>Wedding Films</h3>
+
+            <p>Highlight • Full Film • Teaser</p>
+
+            <span>View Gallery →</span>
+
+        </div>
+
+    </a>
+
+    <!-- Wedding Photos -->
+    <a href="wedding.html" class="portfolioCard">
+
+        <img src="images/VAL & KENT5.jpg" alt="Wedding Photos">
+
+        <div class="portfolioOverlay">
+
+            <h3>Wedding Photos</h3>
+
+            <p>Wedding • Prenup • Ceremony</p>
+
+            <span>View Gallery →</span>
+
+        </div>
+
+    </a>
+
+    <!-- Birthdays -->
+    <a href="birthdays.html" class="portfolioCard">
+
+        <img src="images/Nanay Nel Thumb.jpg" alt="Birthdays">
+
+        <div class="portfolioOverlay">
+
+            <h3>Birthdays</h3>
+
+            <p>Kids • Adult • Surprise Party</p>
+
+            <span>View Gallery →</span>
+
+        </div>
+
+    </a>
+
+    <!-- Corporate -->
+    <a href="corporate.html" class="portfolioCard">
+
+        <img src="images/Award Thumb.jpg" alt="Corporate">
+
+        <div class="portfolioOverlay">
+
+            <h3>Corporate</h3>
+
+            <p>Events • Conference • Branding</p>
+
+            <span>View Gallery →</span>
+
+        </div>
+
+    </a>
+
+    <!-- Debut -->
+    <a href="debut.html" class="portfolioCard">
+
+        <img src="images/Lara XVIII Thumb.jpg" alt="Debut">
+
+        <div class="portfolioOverlay">
+
+            <h3>Debut</h3>
+
+            <p>Pre-Debut • Reception • Portraits</p>
+
+            <span>View Gallery →</span>
+
+        </div>
+
+    </a>
+
+    
+</div>
+
+
+
+<!-- ================= BEHIND THE SCENES ================= -->
+
+<section class="behindScenes">
+
+    <div class="section-title">
+
+        <div class="title-line"></div>
+
+        <span>BEHIND THE SCENES</span>
+
+        <h2>
+
+            The Story Behind<br>
+            Every Beautiful Shot
+
+        </h2>
+
+        <p>
+
+            Every unforgettable photograph begins with creativity,
+            teamwork, and passion. Take a glimpse behind the lens
+            and see how every moment comes to life.
+
+        </p>
+
+    </div>
+
+    <div class="videoWrapper">
+
+<video
+    id="btsVideo"
+    poster="images/Behind the scene Thumb.jpg"
+    playsinline
+>
+
+    <source src="videos/Video2.mp4">
+
+</video>
+
+        <div class="videoOverlay">
+
+            <button id="playVideo">
+
+                <i class="fa-solid fa-play"></i>
+
+            </button>
+
+            <h3>Watch Behind the Scenes</h3>
+
+        </div>
+
+    </div>
+
+</section>
+
+<!-- ================= TESTIMONIALS ================= -->
+
+<section class="testimonials">
+
+    <div class="section-title">
+
+        <div class="title-line"></div>
+
+        <span>CLIENT REVIEWS</span>
+
+        <h2>
+            Loved by
+            Our Clients
+        </h2>
+
+        <p>
+            Every smile, every memory, and every kind word inspires us
+            to keep capturing life's most beautiful moments.
+        </p>
+
+    </div>
+
+    <div class="testimonialSlider">
+
+        <div class="testimonialTrack">
+
+            <div class="testimonialCard">
+
+                <div class="stars">★★★★★</div>
+
+                <p>
+                    "Gallery Proj. exceeded all our expectations.
+                    The team made us feel comfortable and every
+                    photo turned out absolutely stunning."
+                </p>
+
+                <h4>Val & Kent</h4>
+
+                <span>Wedding Couple</span>
+
+            </div>
+
+            <div class="testimonialCard">
+
+                <div class="stars">★★★★★</div>
+
+                <p>
+                    "Very professional from start to finish.
+                    The quality of the photos was amazing
+                    and worth every peso."
+                </p>
+
+                <h4>Aaron & Kath</h4>
+
+                <span>Wedding Couple</span>
+
+            </div>
+
+            <div class="testimonialCard">
+
+                <div class="stars">★★★★★</div>
+
+                <p>
+                    "Highly recommended!
+                    The whole experience was fun,
+                    smooth, and unforgettable."
+                </p>
+
+                <h4>Tin & Dirk</h4>
+
+                <span>Studio Session</span>
+
+            </div>
+
+        </div>
+
+        <!-- DOTS -->
+        <div class="testimonialDots">
+
+            <span class="dot active"></span>
+            <span class="dot"></span>
+            <span class="dot"></span>
+
+        </div>
+
+    </div>
+
+</section>
+
+<!-- ================= CTA ================= -->
+
+<section class="cta">
+
+    <h2>Ready to Capture Your Story?</h2>
+
+    <p>
+        Let's create timeless memories together.
+        Book your photography session today.
+    </p>
+
+<a href="contact.html#bookingForm" class="ctaBtn">
+    Book Now
+</a>
+
+</section>
+
+<!-- ================= FOOTER ================= -->
+
+<footer class="footer">
+
+    <div class="footerContainer">
+
+        <div class="footerBrand">
+
+            <img src="images/Logo1.png" alt="Gallery Proj.">
+
+            <h3>Gallery Proj.</h3>
+
+            <p>
+                Luxury Photography & Videography Studio specializing in Studio Sessions, Wedding Films, Wedding Photography, Birthdays, Corporate Events, and Debut Celebrations.
+            </p>
+
+        </div>
+
+      <div class="footerLinks">
+
+    <h4>Quick Links</h4>
+
+    <a href="index.html">Home</a>
+
+    <a href="index.html#portfolio">Portfolio</a>
+
+    <a href="services.html">Services</a>
+
+   <a href="about.html">About</a>
+
+    <a href="faq.html">FAQ</a>
+
+    <a href="contact.html">Contact</a>
+
+</div>
+
+        <div class="footerFollow">
+
+            <h4>Follow Us</h4>
+
+            <a href="https://www.facebook.com/thegalleryproj" target="_blank">
+                <i class="fab fa-facebook-f"></i> Facebook
+            </a>
+
+            <a href="https://www.instagram.com/gallery.proj/" target="_blank">
+                <i class="fab fa-instagram"></i> Instagram
+            </a>
+
+            <a href="https://www.tiktok.com/@gallery.proj" target="_blank">
+                <i class="fab fa-tiktok"></i> TikTok
+            </a>
+
+        </div>
+
+    </div>
+
+ <div class="footerBottom">
+
+    <p>© 2026 Gallery Proj. All Rights Reserved.</p>
+
+    <p>
+        Designed &amp; Developed by
+        <span>Mark Darryl Lacerna</span>
+    </p>
+
+</div>
+
+</footer>
+
+<script src="app.js"></script>
+<script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
+
+</body>
+</html>

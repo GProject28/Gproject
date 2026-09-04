@@ -1,0 +1,185 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+<title>Birthday Video Collection | Gallery Proj.</title>
+
+<link rel="preconnect" href="https://fonts.googleapis.com">
+
+<link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&family=Playfair+Display:wght@700&display=swap" rel="stylesheet">
+
+<link rel="stylesheet"
+href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.2/css/all.min.css">
+
+<link rel="stylesheet" href="gallery.css">
+
+<link rel="stylesheet" href="style.css">
+
+</head>
+
+<body>
+
+<header class="galleryHeader">
+
+    <a href="birthdays.html" class="backBtn">
+
+        ← Back to Birthdays
+
+    </a>
+
+    <link
+  rel="stylesheet"
+  href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css"
+/>
+
+</header>
+
+<section class="galleryHero">
+
+    <span>OUR PORTFOLIO</span>
+
+    <h1>Birthday Video Collection</h1>
+
+    <p>
+
+         Cinematic birthday videos crafted to preserve every emotion, smile, and unforgettable moment of your special day.
+
+    </p>
+
+</section>
+
+<section
+    class="videoGrid"
+    style="
+        display:grid;
+        grid-template-columns:repeat(3,1fr);
+        gap:30px;
+        max-width:1300px;
+        margin:80px auto;
+    "
+>
+
+    <div class="videoCard">
+
+        <video controls preload="metadata" poster="images/Mateo Thumb.jpg">
+            <source src="videos/MateoBirthday.mp4" type="video/mp4">
+        </video>
+
+        <div class="videoInfo">
+            <h3>Birthday Collection</h3>
+            <span>Mateo</span>
+        </div>
+
+    </div>
+
+</section>
+<!-- ================= CTA ================= -->
+
+<section class="cta">
+
+    <h2>Ready to Capture Your Story?</h2>
+
+    <p>
+        Let's create timeless memories together.
+        Book your photography session today.
+    </p>
+
+    <a href="contact.html" class="ctaBtn">
+        Book Now
+    </a>
+
+</section>
+
+<!-- ================= FOOTER ================= -->
+
+<footer class="footer">
+
+    <div class="footerContainer">
+
+        <div class="footerBrand">
+
+            <img src="images/Logo1.png" alt="Gallery Proj.">
+
+            <h3>Gallery Proj.</h3>
+
+            <p>
+                Luxury Photography & Videography Studio specializing in Studio Sessions, Wedding Films, Wedding Photography, Birthdays, Corporate Events, and Debut Celebrations.
+            </p>
+
+        </div>
+
+      <div class="footerLinks">
+
+    <h4>Quick Links</h4>
+
+    <a href="index.html">Home</a>
+
+    <a href="index.html#portfolio">Portfolio</a>
+
+    <a href="services.html">Services</a>
+
+    <a href="index.html#about">About</a>
+
+    <a href="faq.html">FAQ</a>
+
+    <a href="contact.html">Contact</a>
+
+</div>
+
+        <div class="footerFollow">
+
+            <h4>Follow Us</h4>
+
+            <a href="https://www.facebook.com/thegalleryproj" target="_blank">
+                <i class="fab fa-facebook-f"></i> Facebook
+            </a>
+
+            <a href="https://www.instagram.com/gallery.proj/" target="_blank">
+                <i class="fab fa-instagram"></i> Instagram
+            </a>
+
+            <a href="https://www.tiktok.com/@gallery.proj" target="_blank">
+                <i class="fab fa-tiktok"></i> TikTok
+            </a>
+
+        </div>
+
+    </div>
+
+ <div class="footerBottom">
+
+    <p>© 2026 Gallery Proj. All Rights Reserved.</p>
+
+    <p>
+        Designed &amp; Developed by
+        <span>Mark Darryl Lacerna</span>
+    </p>
+
+</div>
+
+</footer>
+
+<!-- ================= LIGHTBOX ================= -->
+
+<div class="lightbox" id="lightbox">
+
+    <span class="closeLightbox">&times;</span>
+
+    <button class="prevBtn">&#10094;</button>
+
+    <img id="lightboxImg">
+
+    <button class="nextBtn">&#10095;</button>
+
+</div>
+
+<script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
+<script src="gallery.js"></script>
+
+</body>
+
+</html>

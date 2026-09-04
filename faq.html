@@ -1,0 +1,395 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+<title>FAQ | Gallery Proj.</title>
+
+<link rel="preconnect" href="https://fonts.googleapis.com">
+
+<link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&family=Playfair+Display:wght@700&display=swap" rel="stylesheet">
+
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.2/css/all.min.css">
+
+<link rel="stylesheet" href="style.css">
+<link rel="stylesheet" href="faq.css">
+
+</head>
+
+<body>
+
+<header class="navbar">
+
+    <a href="index.html" class="logoBox">
+
+        <img src="images/Logo1.png" class="logo" alt="Gallery Proj.">
+
+    </a>
+
+    <nav class="desktopMenu">
+
+        <a href="index.html">Home</a>
+
+        <a href="index.html#portfolio">Portfolio</a>
+
+        <a href="services.html" class="active">Services</a>
+
+        <a href="about.html" class="active">About</a>
+
+        <a href="faq.html">FAQ</a>
+
+        <a href="contact.html" class="active">Contact</a>
+
+<a href="contact.html#bookingForm" class="bookBtn">
+    Book Now
+</a>
+
+    </nav>
+
+    <button class="menuToggle" onclick="toggleMenu()">
+
+        <i class="fa-solid fa-bars"></i>
+
+    </button>
+
+</header>
+
+<!-- ============== MOBILE MENU ============== -->
+
+<div class="mobileMenu" id="mobileMenu">
+
+    <div class="mobileHeader">
+
+        <img src="images/Logo1.png" class="mobileLogo">
+
+        <button class="closeBtn" onclick="toggleMenu()">
+
+            <i class="fa-solid fa-xmark"></i>
+
+        </button>
+
+    </div>
+
+    <div class="mobileLinks">
+
+        <a href="index.html" onclick="toggleMenu()">Home</a>
+
+        <a href="index.html#portfolio" onclick="toggleMenu()">Portfolio</a>
+
+        <a href="services.html" onclick="toggleMenu()">Services</a>
+
+        <a href="about.html" onclick="toggleMenu()">About</a>
+
+        <a href="faq.html" onclick="toggleMenu()">FAQ</a>
+
+        <a href="contact.html" onclick="toggleMenu()">Contact</a>
+
+    </div>
+
+<a href="contact.html#bookingForm"
+   class="mobileBook"
+   onclick="toggleMenu()">
+    <span>Book Now</span>
+    <i class="fa-solid fa-arrow-right"></i>
+</a>
+
+</div>
+
+<section class="faqHero">
+
+    <span>FREQUENTLY ASKED QUESTIONS</span>
+
+    <h1>Everything You Need<br>To Know</h1>
+
+    <p>
+        Answers to the most common questions about our studio,
+        bookings and photography services.
+    </p>
+
+</section>
+
+<section class="faqSection">
+
+    <!-- FAQ 1 -->
+
+    <div class="faq">
+
+        <button class="faqQuestion">
+
+            <span>How do I book your services?</span>
+
+            <i class="fas fa-plus"></i>
+
+        </button>
+
+        <div class="faqAnswer">
+
+            <ol>
+
+                <li>Send us a message with your preferred service, date and time.</li>
+
+                <li>We'll check our availability.</li>
+
+                <li>If available, we'll send you our booking form.</li>
+
+                <li>Complete the form and reservation fee.</li>
+
+                <li>Your booking will be officially confirmed.</li>
+
+            </ol>
+
+        </div>
+
+    </div>
+
+    <!-- FAQ 2 -->
+
+    <div class="faq">
+
+        <button class="faqQuestion">
+
+            <span>Can I move the furniture and props?</span>
+
+            <i class="fas fa-plus"></i>
+
+        </button>
+
+        <div class="faqAnswer">
+
+            <p>
+
+Yes! You're welcome to rearrange the furniture and props based on your preferred setup.
+
+Our studio assistant will also help you during your session.
+
+We simply ask that everything is handled with care and returned after use.
+
+            </p>
+
+        </div>
+
+    </div>
+
+    <!-- FAQ 3 -->
+
+    <div class="faq">
+
+        <button class="faqQuestion">
+
+            <span>What's the difference between Studio Rental, In-House Photographer and Self-Shoot?</span>
+
+            <i class="fas fa-plus"></i>
+
+        </button>
+
+        <div class="faqAnswer">
+
+            <p>
+
+<b>Studio Rental</b><br>
+Bring your own photographer and enjoy full access to our studio.
+
+<br><br>
+
+<b>In-House Photographer</b><br>
+Our professional photographer handles everything including posing and editing.
+
+<br><br>
+
+<b>Self-Shoot</b><br>
+Use our professional camera setup with remote shutter and monitor preview.
+
+            </p>
+
+        </div>
+
+    </div>
+
+    <!-- FAQ 4 -->
+
+    <div class="faq">
+
+        <button class="faqQuestion">
+
+            <span>Where are you located?</span>
+
+            <i class="fas fa-plus"></i>
+
+        </button>
+
+        <div class="faqAnswer">
+
+            <p>
+
+The Gallery Project<br>
+
+Capitol Drive, San Jose,<br>
+
+Balanga City, Bataan
+
+            </p>
+
+        </div>
+
+    </div>
+
+    <!-- FAQ 5 -->
+
+    <div class="faq">
+
+        <button class="faqQuestion">
+
+            <span>Do you have photographers?</span>
+
+            <i class="fas fa-plus"></i>
+
+        </button>
+
+        <div class="faqAnswer">
+
+            <p>
+
+Yes!
+
+We have professional in-house photographers for portrait sessions, maternity, family, couples and studio shoots.
+
+            </p>
+
+        </div>
+
+    </div>
+
+    <!-- FAQ 6 -->
+
+    <div class="faq">
+
+        <button class="faqQuestion">
+
+            <span>What are your rates?</span>
+
+            <i class="fas fa-plus"></i>
+
+        </button>
+
+        <div class="faqAnswer">
+
+            <p>
+
+Our rates depend on the service and package you choose.
+
+Simply send us your preferred session and we'll recommend the best package for you.
+
+            </p>
+
+        </div>
+
+    </div>
+
+</section>
+
+<script>
+
+document.querySelectorAll(".faqQuestion").forEach(button=>{
+
+button.addEventListener("click",()=>{
+
+const faq=button.parentElement;
+
+faq.classList.toggle("active");
+
+});
+
+});
+
+</script>
+
+<section class="cta">
+
+    <h2>Ready to Capture Your Story?</h2>
+
+    <p>
+        Let's create timeless memories together.
+        Book your photography session today.
+    </p>
+
+<a href="contact.html#bookingForm" class="ctaBtn">
+    Book Now
+</a>
+
+</section>
+
+<!-- ================= FOOTER ================= -->
+
+<footer class="footer">
+
+    <div class="footerContainer">
+
+        <div class="footerBrand">
+
+            <img src="images/Logo1.png" alt="Gallery Proj.">
+
+            <h3>Gallery Proj.</h3>
+
+            <p>
+               Luxury Photography & Videography Studio specializing in Studio Sessions, Wedding Films, Wedding Photography, Birthdays, Corporate Events, and Debut Celebrations.
+            </p>
+
+        </div>
+
+      <div class="footerLinks">
+
+    <h4>Quick Links</h4>
+
+    <a href="index.html">Home</a>
+
+    <a href="index.html#portfolio">Portfolio</a>
+
+    <a href="services.html">Services</a>
+
+    <a href="index.html#about">About</a>
+
+    <a href="faq.html">FAQ</a>
+
+    <a href="contact.html">Contact</a>
+
+</div>
+
+        <div class="footerFollow">
+
+            <h4>Follow Us</h4>
+
+            <a href="https://www.facebook.com/thegalleryproj" target="_blank">
+                <i class="fab fa-facebook-f"></i> Facebook
+            </a>
+
+            <a href="https://www.instagram.com/gallery.proj/" target="_blank">
+                <i class="fab fa-instagram"></i> Instagram
+            </a>
+
+            <a href="https://www.tiktok.com/@gallery.proj" target="_blank">
+                <i class="fab fa-tiktok"></i> TikTok
+            </a>
+
+        </div>
+
+    </div>
+
+ <div class="footerBottom">
+
+    <p>© 2026 Gallery Proj. All Rights Reserved.</p>
+
+    <p>
+        Designed &amp; Developed by
+        <span>Mark Darryl Lacerna</span>
+    </p>
+
+</div>
+
+</footer>
+<script src="app.js"></script>
+</body>
+
+</html>

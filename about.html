@@ -1,0 +1,272 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+<title>About | Gallery Proj.</title>
+
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+
+<link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&family=Playfair+Display:wght@600;700;800&display=swap" rel="stylesheet">
+
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.2/css/all.min.css">
+
+<link rel="stylesheet" href="style.css">
+<link rel="stylesheet" href="about.css">
+
+</head>
+
+<body>
+
+<!-- ================= NAVBAR ================= -->
+
+<header class="navbar">
+
+    <a href="index.html" class="logoBox">
+
+        <img src="images/Logo1.png"
+             class="logo"
+             alt="Gallery Proj.">
+
+    </a>
+
+    <nav class="desktopMenu">
+
+        <a href="index.html">Home</a>
+
+        <a href="index.html#portfolio">Portfolio</a>
+
+        <a href="services.html">Services</a>
+
+        <a href="about.html" class="active">About</a>
+
+        <a href="faq.html">FAQ</a>
+
+        <a href="contact.html">Contact</a>
+
+        <a href="contact.html#bookingForm" class="bookBtn">
+            Book Now
+        </a>
+
+    </nav>
+
+    <button class="menuToggle" onclick="toggleMenu()">
+
+        <i class="fa-solid fa-bars"></i>
+
+    </button>
+
+</header>
+
+
+<!-- ================= MOBILE MENU ================= -->
+
+<div class="mobileMenu" id="mobileMenu">
+
+    <div class="mobileHeader">
+
+        <img src="images/Logo1.png"
+             class="mobileLogo"
+             alt="Gallery Proj.">
+
+        <button class="closeBtn" onclick="toggleMenu()">
+
+            <i class="fa-solid fa-xmark"></i>
+
+        </button>
+
+    </div>
+
+    <div class="mobileLinks">
+
+        <a href="index.html" onclick="toggleMenu()">
+            Home
+        </a>
+
+        <a href="index.html#portfolio" onclick="toggleMenu()">
+            Portfolio
+        </a>
+
+        <a href="services.html" onclick="toggleMenu()">
+            Services
+        </a>
+
+        <a href="about.html" onclick="toggleMenu()">
+            About
+        </a>
+
+        <a href="faq.html" onclick="toggleMenu()">
+            FAQ
+        </a>
+
+        <a href="contact.html" onclick="toggleMenu()">
+            Contact
+        </a>
+
+    </div>
+
+    <a href="contact.html#bookingForm"
+       class="mobileBook"
+       onclick="toggleMenu()">
+
+        <span>Book Now</span>
+
+        <i class="fa-solid fa-arrow-right"></i>
+
+    </a>
+
+</div>
+
+<!-- ================= ABOUT PAGE ================= -->
+
+<main class="aboutPage">
+
+    <!-- ================= ABOUT US ================= -->
+
+    <section class="aboutImageSection">
+
+        <img
+            src="images/Aboutus.png"
+            class="aboutPageImage"
+            alt="About Gallery Proj."
+        >
+
+    </section>
+
+
+    <!-- ================= THE TEAM ================= -->
+
+    <section class="aboutImageSection teamImageSection">
+
+        <img
+            src="images/The Team.png"
+            class="aboutPageImage"
+            alt="The Gallery Proj. Team"
+        >
+
+    </section>
+
+</main>
+
+
+<!-- ================= CTA ================= -->
+
+<section class="cta">
+
+    <h2>Ready to Capture Your Story?</h2>
+
+    <p>
+        Let's create timeless memories together.
+        Book your photography session today.
+    </p>
+
+    <a href="contact.html#bookingForm" class="ctaBtn">
+        Book Now
+    </a>
+
+</section>
+
+
+<!-- ================= FOOTER ================= -->
+
+<footer class="footer">
+
+    <div class="footerContainer">
+
+        <div class="footerBrand">
+
+            <img src="images/Logo1.png"
+                 alt="Gallery Proj.">
+
+            <h3>Gallery Proj.</h3>
+
+            <p>
+                Luxury Photography & Videography Studio
+                specializing in Studio Sessions, Wedding Films,
+                Wedding Photography, Birthdays, Corporate Events,
+                and Debut Celebrations.
+            </p>
+
+        </div>
+
+
+        <div class="footerLinks">
+
+            <h4>Quick Links</h4>
+
+            <a href="index.html">Home</a>
+
+            <a href="index.html#portfolio">Portfolio</a>
+
+            <a href="services.html">Services</a>
+
+            <a href="about.html">About</a>
+
+            <a href="faq.html">FAQ</a>
+
+            <a href="contact.html">Contact</a>
+
+        </div>
+
+
+        <div class="footerFollow">
+
+            <h4>Follow Us</h4>
+
+            <a href="https://www.facebook.com/thegalleryproj"
+               target="_blank">
+
+                <i class="fab fa-facebook-f"></i>
+                Facebook
+
+            </a>
+
+            <a href="https://www.instagram.com/gallery.proj/"
+               target="_blank">
+
+                <i class="fab fa-instagram"></i>
+                Instagram
+
+            </a>
+
+            <a href="https://www.tiktok.com/@gallery.proj"
+               target="_blank">
+
+                <i class="fab fa-tiktok"></i>
+                TikTok
+
+            </a>
+
+        </div>
+
+    </div>
+
+
+    <div class="footerBottom">
+
+        <p>
+            © 2026 Gallery Proj. All Rights Reserved.
+        </p>
+
+        <p>
+
+            Designed &amp; Developed by
+
+            <span>Mark Darryl Lacerna</span>
+
+        </p>
+
+    </div>
+
+</footer>
+
+
+<script src="app.js"></script>
+
+</body>
+
+</html>

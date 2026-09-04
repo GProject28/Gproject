@@ -1,0 +1,1201 @@
+/* ==========================
+        RESET
+========================== */
+
+*{
+    margin:0;
+    padding:0;
+    box-sizing:border-box;
+}
+
+html{
+    scroll-behavior:smooth;
+}
+
+body{
+    font-family:'Poppins',sans-serif;
+    background:#F8F6F2;
+    color:#222;
+    line-height:1.6;
+    overflow-x:hidden;
+}
+
+/* ==========================
+        HEADER
+========================== */
+
+/* ==========================
+        HEADER
+========================== */
+
+.galleryHeader{
+
+    background:#fff;
+
+    padding:28px 8%;
+
+    border-bottom:1px solid rgba(0,0,0,.06);
+
+    position:sticky;
+
+    top:0;
+
+    z-index:1000;
+
+}
+
+.backBtn{
+
+    display:inline-flex;
+
+    align-items:center;
+
+    gap:8px;
+
+    text-decoration:none;
+
+    color:#17352E;
+
+    font-size:15px;
+
+    font-weight:600;
+
+    transition:.3s ease;
+
+}
+
+.backBtn:hover{
+
+    color:#C8A46A;
+
+    transform:translateX(-4px);
+
+}
+
+/* ==========================
+        HERO
+========================== */
+
+.servicesHero{
+
+    position:relative;
+
+    display:flex;
+
+    flex-direction:column;
+
+    justify-content:center;
+
+    align-items:center;
+
+    text-align:center;
+
+    min-height:70vh;
+
+    padding:120px 8%;
+
+    overflow:hidden;
+
+    background:
+    linear-gradient(rgba(20,20,20,.55),
+    rgba(20,20,20,.55)),
+    url("images/Service123.jpg");
+
+    background-size:cover;
+
+    background-position:center;
+
+    background-repeat:no-repeat;
+
+}
+
+.servicesHero span{
+
+    display:inline-block;
+
+    color:#C8A46A;
+
+    font-size:14px;
+
+    font-weight:600;
+
+    letter-spacing:5px;
+
+    text-transform:uppercase;
+
+    margin-bottom:20px;
+
+}
+
+.servicesHero span::after{
+
+    content:"";
+
+    display:block;
+
+    width:75px;
+
+    height:3px;
+
+    margin:15px auto 0;
+
+    background:#C8A46A;
+
+    border-radius:50px;
+
+}
+
+.servicesHero h1{
+
+    font-family:'Playfair Display',serif;
+
+    font-size:72px;
+
+    line-height:1.1;
+
+    color:#fff;
+
+    margin-bottom:25px;
+
+}
+
+.servicesHero p{
+
+    max-width:720px;
+
+    color:rgba(255,255,255,.92);
+
+    font-size:18px;
+
+    line-height:1.9;
+
+}
+
+/* ==========================
+      SECTION TITLE
+========================== */
+
+/* ==========================
+      SECTION TITLE
+========================== */
+
+.sectionTitle{
+
+    text-align:center;
+
+    margin-bottom:70px;
+
+}
+
+.sectionTitle span{
+
+    display:inline-block;
+
+    color:#C8A46A;
+
+    font-size:13px;
+
+    font-weight:600;
+
+    letter-spacing:4px;
+
+    text-transform:uppercase;
+
+    margin-bottom:12px;
+
+}
+
+.sectionTitle span::after{
+
+    content:"";
+
+    display:block;
+
+    width:60px;
+
+    height:2px;
+
+    background:#C8A46A;
+
+    margin:12px auto 0;
+
+    border-radius:20px;
+
+}
+
+.sectionTitle h2{
+
+    font-family:'Playfair Display',serif;
+
+    font-size:50px;
+
+    color:#17352E;
+
+    margin-bottom:18px;
+
+    line-height:1.2;
+
+}
+
+.sectionTitle p{
+
+    max-width:720px;
+
+    margin:auto;
+
+    color:#777;
+
+    font-size:17px;
+
+    line-height:1.9;
+
+}
+
+/* ==========================
+      STUDIO SERVICES
+========================== */
+
+/* ==========================
+      STUDIO SERVICES
+========================== */
+
+.studioServices{
+
+    padding:20px 8% 90px;
+
+}
+
+.serviceGrid{
+
+    display:grid;
+
+    grid-template-columns:repeat(3,1fr);
+
+    gap:35px;
+
+}
+
+.serviceCard{
+
+    position:relative;
+
+    background:#fff;
+
+    padding:45px 35px;
+
+    border-radius:24px;
+
+    border:1px solid #ececec;
+
+    overflow:hidden;
+
+    box-shadow:0 15px 40px rgba(0,0,0,.08);
+
+    transition:all .35s ease;
+
+}
+
+.serviceCard::before{
+
+    content:"";
+
+    position:absolute;
+
+    top:0;
+
+    left:0;
+
+    width:100%;
+
+    height:4px;
+
+    background:#C8A46A;
+
+    transform:scaleX(0);
+
+    transition:.35s;
+
+}
+
+.serviceCard:hover{
+
+    transform:translateY(-10px);
+
+    border-color:#C8A46A;
+
+    box-shadow:0 25px 55px rgba(0,0,0,.12);
+
+}
+
+.serviceCard:hover::before{
+
+    transform:scaleX(1);
+
+}
+
+.serviceIcon{
+
+    width:72px;
+
+    height:72px;
+
+    border-radius:50%;
+
+    background:#17352E;
+
+    color:#C8A46A;
+
+    display:flex;
+
+    justify-content:center;
+
+    align-items:center;
+
+    font-size:30px;
+
+    margin-bottom:25px;
+
+    transition:.35s;
+
+}
+
+.serviceCard:hover .serviceIcon{
+
+    background:#C8A46A;
+
+    color:#17352E;
+
+    transform:rotate(10deg) scale(1.08);
+
+}
+
+.serviceCard h3{
+
+    font-family:'Playfair Display',serif;
+
+    font-size:30px;
+
+    color:#17352E;
+
+    margin-bottom:15px;
+
+}
+
+.serviceCard p{
+
+    color:#666;
+
+    line-height:1.8;
+
+    margin-bottom:20px;
+
+}
+
+.serviceCard ul{
+
+    list-style:none;
+
+    margin-bottom:30px;
+
+}
+
+.serviceCard li{
+
+    display:flex;
+
+    align-items:center;
+
+    gap:10px;
+
+    padding:10px 0;
+
+    color:#555;
+
+    border-bottom:1px solid #eee;
+
+}
+
+.serviceCard li:last-child{
+
+    border-bottom:none;
+
+}
+
+.serviceCard a{
+
+    display:inline-flex;
+
+    align-items:center;
+
+    gap:8px;
+
+    text-decoration:none;
+
+    color:#17352E;
+
+    font-weight:600;
+
+    transition:.3s;
+
+}
+
+.serviceCard a:hover{
+
+    color:#C8A46A;
+
+    transform:translateX(6px);
+
+}
+
+/* =========================================================
+      SERVICE POSTERS
+========================================================= */
+
+.servicePosters{
+    padding:70px 8% 35px;
+    background:#F8F6F2;
+}
+
+.servicePosterGrid{
+    width:100%;
+    max-width:1500px;
+    margin:0 auto;
+
+    display:grid;
+    grid-template-columns:repeat(2, minmax(0, 1fr));
+    gap:30px;
+}
+
+.servicePoster{
+    width:100%;
+    overflow:hidden;
+
+    border-radius:20px;
+
+    background:#fff;
+
+    border:1px solid rgba(23,53,46,.08);
+
+    box-shadow:
+        0 18px 45px rgba(0,0,0,.10);
+
+    transition:
+        transform .35s ease,
+        box-shadow .35s ease;
+}
+
+.servicePoster img{
+    display:block;
+
+    width:100%;
+    height:auto;
+
+    object-fit:contain;
+}
+
+.servicePoster:hover{
+    transform:translateY(-6px);
+
+    box-shadow:
+        0 28px 60px rgba(0,0,0,.16);
+}
+
+
+/* =========================================================
+      SERVICE POSTERS — TABLET
+========================================================= */
+
+@media(max-width:900px){
+
+    .servicePosters{
+        padding:60px 6% 70px;
+    }
+
+    .servicePosterGrid{
+        grid-template-columns:repeat(2, minmax(0, 1fr));
+        gap:22px;
+    }
+
+}
+
+
+/* =========================================================
+      SERVICE POSTERS — MOBILE
+========================================================= */
+
+@media(max-width:768px){
+
+    .servicePosters{
+        padding:55px 25px 5px;
+    }
+
+    .servicePosterGrid{
+        grid-template-columns:1fr;
+        gap:22px;
+    }
+
+    .servicePoster{
+        border-radius:16px;
+    }
+
+}
+
+
+/* =========================================================
+      SERVICE POSTERS — SMALL MOBILE
+========================================================= */
+
+@media(max-width:480px){
+
+    .servicePosters{
+        padding:50px 18px 50px;
+    }
+
+    .servicePosterGrid{
+        gap:18px;
+    }
+
+    .servicePoster{
+        border-radius:13px;
+    }
+
+}
+
+/* ==========================
+      WHY CHOOSE US
+========================== */
+
+/* ==========================
+      WHY CHOOSE US
+========================== */
+
+.whyChoose{
+
+    padding:40px 8% 120px;
+
+}
+
+.whyGrid{
+
+    display:grid;
+
+    grid-template-columns:repeat(3,1fr);
+
+    gap:30px;
+
+}
+
+.whyCard{
+
+    background:#fff;
+
+    padding:40px 30px;
+
+    border-radius:24px;
+
+    text-align:center;
+
+    border:1px solid #ececec;
+
+    box-shadow:0 15px 40px rgba(0,0,0,.08);
+
+    transition:.35s ease;
+
+}
+
+.whyCard:hover{
+
+    transform:translateY(-10px);
+
+    border-color:#C8A46A;
+
+    box-shadow:0 25px 55px rgba(0,0,0,.12);
+
+}
+
+.whyCard i{
+
+    width:70px;
+
+    height:70px;
+
+    margin:0 auto 25px;
+
+    border-radius:50%;
+
+    display:flex;
+
+    justify-content:center;
+
+    align-items:center;
+
+    background:#17352E;
+
+    color:#C8A46A;
+
+    font-size:28px;
+
+    transition:.35s;
+
+}
+
+.whyCard:hover i{
+
+    background:#C8A46A;
+
+    color:#17352E;
+
+}
+
+.whyCard h3{
+
+    font-family:'Playfair Display',serif;
+
+    font-size:26px;
+
+    color:#17352E;
+
+    margin-bottom:15px;
+
+}
+
+.whyCard p{
+
+    color:#666;
+
+    line-height:1.8;
+
+    font-size:15px;
+
+}
+/* ==========================
+      CTA
+========================== */
+
+/* ==========================
+        CTA
+========================== */
+
+.cta{
+
+    padding:120px 8%;
+
+    text-align:center;
+
+    background:#17352E;
+
+}
+
+.cta span{
+
+    color:#C8A46A;
+
+    font-size:14px;
+
+    font-weight:600;
+
+    letter-spacing:5px;
+
+    text-transform:uppercase;
+
+}
+
+.cta h2{
+
+    font-family:'Playfair Display',serif;
+
+    color:#fff;
+
+    font-size:56px;
+
+    margin:20px 0;
+
+}
+
+.cta p{
+
+    max-width:700px;
+
+    margin:0 auto 40px;
+
+    color:#ddd;
+
+    font-size:18px;
+
+    line-height:1.9;
+
+}
+
+.ctaButtons{
+
+    display:flex;
+
+    justify-content:center;
+
+    gap:20px;
+
+    flex-wrap:wrap;
+
+}
+
+.primaryBtn{
+
+    background:#C8A46A;
+
+    color:#17352E;
+
+    padding:18px 38px;
+
+    border-radius:50px;
+
+    text-decoration:none;
+
+    font-weight:600;
+
+    transition:.3s;
+
+}
+
+.primaryBtn:hover{
+
+    transform:translateY(-4px);
+
+}
+
+.secondaryBtn{
+
+    border:2px solid #C8A46A;
+
+    color:#fff;
+
+    padding:18px 38px;
+
+    border-radius:50px;
+
+    text-decoration:none;
+
+    font-weight:600;
+
+    transition:.3s;
+
+}
+
+.secondaryBtn:hover{
+
+    background:#C8A46A;
+
+    color:#17352E;
+
+}
+
+/* ==========================
+        STATS
+========================== */
+
+.statsSection{
+
+    padding:20px 8% 120px;
+
+}
+
+.statsGrid{
+
+    display:grid;
+
+    grid-template-columns:repeat(4,1fr);
+
+    gap:25px;
+
+}
+
+.statCard{
+
+    background:#17352E;
+
+    color:#fff;
+
+    border-radius:24px;
+
+    padding:45px 30px;
+
+    text-align:center;
+
+    transition:.35s;
+
+}
+
+.statCard:hover{
+
+    transform:translateY(-8px);
+
+    background:#C8A46A;
+
+}
+
+.statCard h2{
+
+    font-family:'Playfair Display',serif;
+
+    font-size:54px;
+
+    margin-bottom:10px;
+
+}
+
+.statCard p{
+
+    font-size:16px;
+
+    opacity:.95;
+
+}
+
+/* ==========================
+        VIDEO
+========================== */
+
+.videoSection{
+
+    position:relative;
+
+    width:100%;
+
+    height:80vh;
+
+    overflow:hidden;
+
+}
+
+.videoSection video{
+
+    width:100%;
+
+    height:100%;
+
+    object-fit:cover;
+
+    display:block;
+
+}
+
+.videoOverlay{
+
+    position:absolute;
+
+    inset:0;
+
+    background:rgba(0,0,0,.35);
+
+    display:flex;
+
+    flex-direction:column;
+
+    justify-content:center;
+
+    align-items:center;
+
+    text-align:center;
+
+    color:#fff;
+
+    padding:20px;
+
+}
+
+.videoOverlay h2{
+
+    font-family:'Playfair Display',serif;
+
+    font-size:58px;
+
+    max-width:700px;
+
+    margin-bottom:15px;
+
+}
+
+.videoOverlay p{
+
+    color:#C8A46A;
+
+    letter-spacing:4px;
+
+    font-weight:600;
+
+    text-transform:uppercase;
+
+}
+
+/* ==========================
+      MOBILE
+========================== */
+
+/* ==========================
+      MOBILE
+========================== */
+
+@media(max-width:1024px){
+
+.statsGrid{
+
+    grid-template-columns:1fr;
+
+}
+
+.statCard{
+
+    padding:35px 20px;
+
+}
+
+.statCard h2{
+
+    font-size:42px;
+
+}
+
+.serviceGrid{
+
+    grid-template-columns:repeat(2,1fr);
+
+}
+
+
+.whyGrid{
+
+    grid-template-columns:repeat(2,1fr);
+
+}
+
+
+}
+
+
+@media(max-width:768px){
+
+.galleryHeader{
+
+    padding:22px;
+
+}
+
+.backBtn{
+
+    font-size:14px;
+
+}
+
+.servicesHero{
+
+    min-height:55vh;
+
+    padding:90px 25px;
+
+}
+
+.servicesHero h1{
+
+    font-size:46px;
+
+}
+
+.servicesHero p{
+
+    font-size:16px;
+
+}
+
+.sectionTitle{
+
+    margin-bottom:45px;
+
+}
+
+.sectionTitle h2{
+
+    font-size:36px;
+
+}
+
+.sectionTitle p{
+
+    font-size:15px;
+
+}
+
+.studioServices,
+.servicePosters,
+.photoServices,
+.whyChoose{
+
+    padding:20px 25px 80px;
+
+}
+
+.serviceGrid,
+.whyGrid{
+
+    grid-template-columns:1fr;
+
+}
+
+.serviceCard{
+
+    padding:35px;
+
+}
+
+.photoCard{
+
+    height:260px;
+
+}
+
+.overlay{
+
+    padding:22px;
+
+}
+
+.overlay h3{
+
+    font-size:24px;
+
+}
+
+.whyCard{
+
+    padding:35px;
+
+}
+
+.cta{
+
+    padding:80px 25px;
+
+}
+
+.cta h2{
+
+    font-size:38px;
+
+}
+
+.cta p{
+
+    font-size:16px;
+
+}
+
+.ctaButtons{
+
+    flex-direction:column;
+
+}
+
+.primaryBtn,
+.secondaryBtn{
+
+    width:100%;
+
+}
+
+.videoSection{
+
+    height:45vh;
+
+}
+
+}
+
+
+@media(max-width:480px){
+
+.servicesHero{
+
+    padding:70px 20px;
+
+}
+
+.servicesHero h1{
+
+    font-size:36px;
+
+}
+
+.servicesHero p{
+
+    font-size:15px;
+
+    line-height:1.8;
+
+}
+
+.sectionTitle h2{
+
+    font-size:30px;
+
+}
+
+.serviceCard{
+
+    padding:28px;
+
+}
+
+.serviceCard h3{
+
+    font-size:24px;
+
+}
+
+.serviceCard li{
+
+    font-size:15px;
+
+}
+
+.photoCard{
+
+    height:220px;
+
+}
+
+.overlay{
+
+    padding:18px;
+
+}
+
+.overlay h3{
+
+    font-size:21px;
+
+}
+
+.overlay span{
+
+    font-size:14px;
+
+}
+
+.whyCard{
+
+    padding:28px;
+
+}
+
+.whyCard h3{
+
+    font-size:22px;
+
+}
+
+.whyCard p{
+
+    font-size:14px;
+
+}
+
+
+}
