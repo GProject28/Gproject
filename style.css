@@ -542,8 +542,8 @@ body{
 .heroText{
     left:25px;
     right:25px;
-    top:43%;
-    padding-top:30px;
+    top:50%;
+    padding-top:10px;
 }
 
 .heroText h1{
@@ -1686,7 +1686,8 @@ body{
 }
 
 /* =========================================
-   HERO BUTTON — MOBILE BOOK NOW
+  /* =========================================
+   MOBILE HERO BOOK NOW
 ========================================= */
 
 .mobileBookText{
