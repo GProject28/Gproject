@@ -543,7 +543,7 @@ body{
     left:25px;
     right:25px;
     top:43%;
-    padding-top:20px;
+    padding-top:30px;
 }
 
 .heroText h1{
@@ -1681,6 +1681,26 @@ body{
 
         display:flex;
 
+    }
+
+}
+
+/* =========================================
+   HERO BUTTON — MOBILE BOOK NOW
+========================================= */
+
+.mobileBookText{
+    display:none;
+}
+
+@media(max-width:768px){
+
+    .desktopContactText{
+        display:none;
+    }
+
+    .mobileBookText{
+        display:inline;
     }
 
 }
