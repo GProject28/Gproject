@@ -135,19 +135,12 @@ body{
 }
 
 .heroText{
-
     position:absolute;
-
     left:8%;
-
-    top:54%;
-
+    top:58%;
     transform:translateY(-50%);
-
     max-width:650px;
-
     padding-top:60px;
-
 }
 
 /*=========================
@@ -193,21 +186,14 @@ body{
 
 
 .studioName{
-
     display:block;
-
     text-align:center;
-
     font-family:'Playfair Display',serif;
-
     font-size:26px;
-
     color:#fff;
-
     margin-bottom:30px;
-
     position:relative;
-
+    transform:translateY(25px);
 }
 
 .studioName::after{
@@ -1072,13 +1058,13 @@ body{
 ========================== */
 
 .cta{
-
+    width:100%;
+    max-width:none;
+    margin:0;
     padding:90px 8%;
-
+    box-sizing:border-box;
     background:#17352E;
-
     text-align:center;
-
 }
 
 .cta h2{
