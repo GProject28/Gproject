@@ -2284,23 +2284,30 @@ body{
 }
 
 
-/* =========================
-   MOBILE
-========================= */
-
 @media(max-width:768px){
 
     .homeLogoBox{
-        gap:0;
+        gap:10px;
     }
 
     .homeLogoBox .logo{
-        width:52px;
-        height:52px;
+        width:48px;
+        height:48px;
     }
 
     .homeLogoBox .logoText{
-        display:none;
+        display:flex;
+    }
+
+    .homeLogoBox .logoText strong{
+        font-size:11px;
+        letter-spacing:2.5px;
+    }
+
+    .homeLogoBox .logoText span{
+        margin-top:5px;
+        font-size:6px;
+        letter-spacing:1.8px;
     }
 
 }
