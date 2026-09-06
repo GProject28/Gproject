@@ -426,3 +426,19 @@ document.addEventListener("DOMContentLoaded", function(){
     }
 
 });
+
+/* ==========================
+   NAVBAR LOGO → HOME
+========================== */
+document.addEventListener("DOMContentLoaded", () => {
+
+    document.querySelectorAll(".navbar .logoBox").forEach(logo => {
+
+        logo.addEventListener("click", function(e) {
+            e.preventDefault();
+            window.location.href = "index.html";
+        });
+
+    });
+
+});
