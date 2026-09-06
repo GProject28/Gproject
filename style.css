@@ -2622,3 +2622,152 @@ body{
     }
 
 }
+
+
+/* =========================================================
+   OUR STORY — FINE ART PHOTO COLLAGE
+========================================================= */
+
+.storyCollage{
+    position:relative;
+    width:100%;
+    max-width:520px;
+    height:470px;
+    margin:auto;
+}
+
+/* All 15 photos */
+.storyCollage .storyPhoto{
+    position:absolute;
+    overflow:hidden;
+    background:#eee;
+
+    opacity:0;
+    visibility:hidden;
+
+    transition:
+        opacity .8s ease,
+        transform .8s ease;
+
+    z-index:1;
+}
+
+.storyCollage .storyPhoto img{
+    width:100%;
+    height:100%;
+    display:block;
+    object-fit:cover;
+}
+
+/* =========================================
+   COLLAGE POSITIONS
+========================================= */
+
+/* Large photo - left */
+.storyCollage .storyPhoto1,
+.storyCollage .storyPhoto4,
+.storyCollage .storyPhoto7,
+.storyCollage .storyPhoto10,
+.storyCollage .storyPhoto13{
+
+    left:0;
+    top:20px;
+
+    width:245px;
+    height:350px;
+}
+
+/* Small photo - upper right */
+.storyCollage .storyPhoto2,
+.storyCollage .storyPhoto5,
+.storyCollage .storyPhoto8,
+.storyCollage .storyPhoto11,
+.storyCollage .storyPhoto14{
+
+    right:25px;
+    top:0;
+
+    width:155px;
+    height:240px;
+}
+
+/* Portrait photo - lower right */
+.storyCollage .storyPhoto3,
+.storyCollage .storyPhoto6,
+.storyCollage .storyPhoto9,
+.storyCollage .storyPhoto12,
+.storyCollage .storyPhoto15{
+
+    right:75px;
+    bottom:0;
+
+    width:170px;
+    height:230px;
+
+    border:5px solid #fff;
+
+    box-shadow:0 10px 30px rgba(0,0,0,.15);
+
+    z-index:3;
+}
+
+/* =========================================
+   ACTIVE PHOTOS
+========================================= */
+
+.storyCollage .storyPhoto.active{
+    opacity:1;
+    visibility:visible;
+}
+
+/* Main image */
+.storyCollage .storyPhoto.active.storyPhoto1,
+.storyCollage .storyPhoto.active.storyPhoto4,
+.storyCollage .storyPhoto.active.storyPhoto7,
+.storyCollage .storyPhoto.active.storyPhoto10,
+.storyCollage .storyPhoto.active.storyPhoto13{
+    z-index:2;
+    transform:translateX(0);
+}
+
+/* Upper image */
+.storyCollage .storyPhoto.active.storyPhoto2,
+.storyCollage .storyPhoto.active.storyPhoto5,
+.storyCollage .storyPhoto.active.storyPhoto8,
+.storyCollage .storyPhoto.active.storyPhoto11,
+.storyCollage .storyPhoto.active.storyPhoto14{
+    z-index:2;
+    transform:translateY(0);
+}
+
+/* Lower image */
+.storyCollage .storyPhoto.active.storyPhoto3,
+.storyCollage .storyPhoto.active.storyPhoto6,
+.storyCollage .storyPhoto.active.storyPhoto9,
+.storyCollage .storyPhoto.active.storyPhoto12,
+.storyCollage .storyPhoto.active.storyPhoto15{
+    z-index:4;
+    transform:translateY(0);
+}
+
+
+/* =========================================
+   HANDWRITTEN TEXT
+========================================= */
+
+.storyHandText{
+    position:absolute;
+
+    left:10px;
+    bottom:5px;
+
+    font-family:cursive;
+    font-size:32px;
+    line-height:1.05;
+
+    color:#333;
+
+    transform:rotate(-7deg);
+
+    z-index:5;
+}

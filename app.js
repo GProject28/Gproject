@@ -442,3 +442,63 @@ document.addEventListener("DOMContentLoaded", () => {
     });
 
 });
+
+/* =========================================================
+   OUR STORY — FINE ART COLLAGE SLIDESHOW
+========================================================= */
+
+document.addEventListener("DOMContentLoaded", () => {
+
+    const storyPhotos = document.querySelectorAll(
+        ".storyCollage .storyPhoto"
+    );
+
+    if (!storyPhotos.length) return;
+
+    let currentGroup = 0;
+
+    /*
+        15 photos = 5 groups
+        Each group displays 3 photos:
+        
+        Group 1 → 1, 2, 3
+        Group 2 → 4, 5, 6
+        Group 3 → 7, 8, 9
+        Group 4 → 10, 11, 12
+        Group 5 → 13, 14, 15
+    */
+
+    function showStoryGroup(group){
+
+        storyPhotos.forEach(photo => {
+            photo.classList.remove("active");
+        });
+
+        const start = group * 3;
+
+        for(let i = start; i < start + 3; i++){
+
+            if(storyPhotos[i]){
+                storyPhotos[i].classList.add("active");
+            }
+
+        }
+    }
+
+    // Initial group
+    showStoryGroup(currentGroup);
+
+    // Automatic change every 4 seconds
+    setInterval(() => {
+
+        currentGroup++;
+
+        if(currentGroup >= 5){
+            currentGroup = 0;
+        }
+
+        showStoryGroup(currentGroup);
+
+    }, 4000);
+
+});
