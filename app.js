@@ -295,3 +295,117 @@ document.addEventListener("DOMContentLoaded", () => {
     });
 
 });
+
+/* =========================================================
+   HERO SLIDESHOW
+   ========================================================= */
+
+document.addEventListener("DOMContentLoaded", function(){
+
+    const heroSlides = document.querySelectorAll(".heroSlide");
+    const heroDots = document.querySelectorAll(".heroDot");
+    const heroCurrent = document.getElementById("heroCurrent");
+
+    const prevBtn = document.querySelector(".heroPrev");
+    const nextBtn = document.querySelector(".heroNext");
+
+    if(!heroSlides.length) return;
+
+    let currentSlide = 0;
+    let slideTimer;
+
+
+    function showHeroSlide(index){
+
+        if(index >= heroSlides.length){
+            index = 0;
+        }
+
+        if(index < 0){
+            index = heroSlides.length - 1;
+        }
+
+        heroSlides.forEach((slide, i) => {
+            slide.classList.toggle("active", i === index);
+        });
+
+
+        heroDots.forEach((dot, i) => {
+            dot.classList.toggle("active", i === index);
+        });
+
+
+        if(heroCurrent){
+            heroCurrent.textContent =
+                String(index + 1).padStart(2, "0");
+        }
+
+
+        currentSlide = index;
+    }
+
+
+    function nextHeroSlide(){
+        showHeroSlide(currentSlide + 1);
+    }
+
+
+    function prevHeroSlide(){
+        showHeroSlide(currentSlide - 1);
+    }
+
+
+    function startHeroSlideshow(){
+
+        clearInterval(slideTimer);
+
+        slideTimer = setInterval(() => {
+            nextHeroSlide();
+        }, 3000);
+
+    }
+
+
+    if(nextBtn){
+
+        nextBtn.addEventListener("click", function(){
+
+            nextHeroSlide();
+            startHeroSlideshow();
+
+        });
+
+    }
+
+
+    if(prevBtn){
+
+        prevBtn.addEventListener("click", function(){
+
+            prevHeroSlide();
+            startHeroSlideshow();
+
+        });
+
+    }
+
+
+    heroDots.forEach((dot, index) => {
+
+        dot.addEventListener("click", function(){
+
+            showHeroSlide(index);
+            startHeroSlideshow();
+
+        });
+
+    });
+
+
+    /* Initial */
+
+    showHeroSlide(0);
+    startHeroSlideshow();
+
+});
+

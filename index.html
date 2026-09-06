@@ -26,11 +26,16 @@
 
 <header class="navbar">
 
-    <a href="#" class="logoBox">
+<a href="#" class="logoBox homeLogoBox">
 
-        <img src="images/Logo1.png" class="logo" alt="G Project Logo">
+    <img src="images/Logo1.png" class="logo" alt="Gallery Proj.">
 
-    </a>
+    <div class="logoText">
+        <strong>GALLERY PROJ.</strong>
+        <span>CAPTURE YOUR STORY</span>
+    </div>
+
+</a>
 
     <nav class="desktopMenu">
 
@@ -111,56 +116,102 @@
 
 </div>
 
-<!-- ================= HERO ================= -->
+<!-- ================= HOME HERO ================= -->
 
-<section class="hero" id="home">
+<section class="homeHero" id="home">
 
-    <img src="images/G1.jpg" class="heroImage" alt="Photography Studio">
+   <div class="heroSlides">
 
-    <div class="overlay"></div>
+    <!-- SLIDE 1 -->
+    <div class="heroSlide active">
+        <img src="images/G1.jpg" alt="Gallery Proj. Studio">
+        <div class="heroOverlay"></div>
+    </div>
 
-    <div class="heroText">
+    <!-- SLIDE 2 -->
+    <div class="heroSlide">
+        <img src="images/FineArt7.jpg" alt="Fine Art Photography">
+        <div class="heroOverlay"></div>
+    </div>
 
+    <!-- SLIDE 3 -->
+    <div class="heroSlide">
+        <img src="images/VAL & KENT12.jpg" alt="Wedding Photography">
+        <div class="heroOverlay"></div>
+    </div>
+
+    <!-- SLIDE 4 -->
+    <div class="heroSlide">
+        <img src="images/VAL & KENT13.jpg" alt="Wedding Photography">
+        <div class="heroOverlay"></div>
+    </div>
+
+</div>
+
+
+    <!-- HERO CONTENT -->
+    <div class="homeHeroContent">
+
+        <div class="heroEyebrow">
+            WEDDINGS &nbsp; · &nbsp; PORTRAITS &nbsp; · &nbsp; EVENTS
+        </div>
 
         <h1>
-            Capture<br>
-
-            Moments<br>
-
-            That Last<br>
-
-            Forever.
-
+            Turn<br>
+            Moments Into<br>
+            <span>Timeless Stories.</span>
         </h1>
 
         <p>
-
-            Luxury Photography & Videography Studio specializing in Studio Sessions, Wedding Films, Wedding Photography, Birthdays, Corporate Events, and Debut Celebrations.
-
+            We capture authentic moments with creativity,
+            passion, and a cinematic touch — for the
+            stories that last forever.
         </p>
 
-        <div class="heroButtons">
+        <div class="homeHeroButtons">
 
-            <a href="#portfolio" class="primaryBtn">
-
-                View Portfolio
-
+            <a href="contact.html#bookingForm" class="heroBookBtn">
+                Book Your Session
+                <i class="fa-solid fa-arrow-right"></i>
             </a>
 
-  <a href="contact.html#bookingForm" class="secondaryBtn mobileBookNow">
-    <span class="desktopContactText">Contact Us</span>
-    <span class="mobileBookText">Book Now</span>
-</a>
+            <a href="#portfolio" class="heroPortfolioBtn">
+                Explore Portfolio
+                <i class="fa-solid fa-arrow-right"></i>
+            </a>
 
         </div>
 
-        <div class="scrollDown">
+    </div>
 
-            <span>↓</span>
 
-            Scroll Down
+    <!-- PREVIOUS -->
+    <button class="heroPrev" type="button" aria-label="Previous slide">
+        <i class="fa-solid fa-arrow-left"></i>
+    </button>
 
-        </div>
+
+    <!-- NEXT -->
+    <button class="heroNext" type="button" aria-label="Next slide">
+        <i class="fa-solid fa-arrow-right"></i>
+    </button>
+
+
+    <!-- SLIDE COUNTER -->
+    <div class="heroCounter">
+        <span id="heroCurrent">01</span>
+        <span class="heroCounterLine">/</span>
+        <span>04</span>
+    </div>
+
+
+    <!-- DOTS -->
+    <div class="heroDots">
+
+        <button class="heroDot active" type="button"></button>
+        <button class="heroDot" type="button"></button>
+        <button class="heroDot" type="button"></button>
+        <button class="heroDot" type="button"></button>
 
     </div>
 
@@ -545,8 +596,8 @@
 
 </footer>
 
-<script src="app.js"></script>
 <script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
+<script src="app.js"></script>
 
 </body>
 </html>
