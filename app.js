@@ -34,77 +34,71 @@ window.addEventListener("load", () => {
 
 });
 
-const video = document.getElementById("btsVideo");
-const playBtn = document.getElementById("playVideo");
-const overlay = document.querySelector(".behindVideoOverlay");
+// ==========================
+// BEHIND THE SCENES VIDEO
+// ==========================
 
-if (video && playBtn) {
+document.addEventListener("DOMContentLoaded", () => {
 
-    playBtn.addEventListener("click", async () => {
+    const video = document.getElementById("btsVideo");
 
-        try {
+    if (!video) return;
 
-            video.controls = true;
+    video.muted = true;
+    video.autoplay = true;
+    video.loop = true;
+    video.playsInline = true;
 
-            // Unmute after the user taps
-            video.muted = false;
+    video.play().catch(err => {
+        console.log("Video autoplay blocked:", err);
+    });
 
-            await video.play();
+});
+if (document.querySelector(".testimonialSwiper") && typeof Swiper !== "undefined") {
 
-            overlay.style.opacity = "0";
-            overlay.style.pointerEvents = "none";
+    const testimonialSwiper = new Swiper(".testimonialSwiper", {
 
-        } catch (err) {
+        loop: true,
 
-            console.log(err);
+        centeredSlides: true,
+
+        spaceBetween: 30,
+
+        autoplay: {
+
+            delay: 4000,
+
+            disableOnInteraction: false,
+
+        },
+
+        pagination: {
+
+            el: ".swiper-pagination",
+
+            clickable: true,
+
+        },
+
+        breakpoints: {
+
+            0: {
+
+                slidesPerView: 1,
+
+            },
+
+            992: {
+
+                slidesPerView: 2,
+
+            }
 
         }
 
     });
 
 }
-
-const testimonialSwiper = new Swiper(".testimonialSwiper", {
-
-    loop: true,
-
-    centeredSlides: true,
-
-    spaceBetween: 30,
-
-    autoplay: {
-
-        delay: 4000,
-
-        disableOnInteraction: false,
-
-    },
-
-    pagination: {
-
-        el: ".swiper-pagination",
-
-        clickable: true,
-
-    },
-
-    breakpoints: {
-
-        0: {
-
-            slidesPerView: 1,
-
-        },
-
-        992: {
-
-            slidesPerView: 2,
-
-        }
-
-    }
-
-});
 
 /* =========================================================
    MOBILE PACKAGE PHOTO VIEWER
