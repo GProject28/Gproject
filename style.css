@@ -2335,3 +2335,148 @@ body{
     }
 
 }
+
+/* =========================================================
+   HOME FEATURE STRIP
+   HOME PAGE ONLY
+========================================================= */
+
+.homeFeatures{
+    width:100%;
+    padding:38px 7%;
+
+    display:grid;
+    grid-template-columns:repeat(4,1fr);
+
+    background:#fff;
+
+    border-bottom:1px solid rgba(0,0,0,.07);
+}
+
+.homeFeatureItem{
+    display:flex;
+    align-items:center;
+
+    gap:18px;
+
+    padding:8px 28px;
+
+    border-right:1px solid rgba(0,0,0,.08);
+}
+
+.homeFeatureItem:last-child{
+    border-right:none;
+}
+
+.homeFeatureItem > i{
+    flex-shrink:0;
+
+    width:48px;
+    height:48px;
+
+    display:flex;
+    align-items:center;
+    justify-content:center;
+
+    border-radius:50%;
+
+    background:rgba(200,164,106,.12);
+
+    color:#C8A46A;
+
+    font-size:20px;
+}
+
+.homeFeatureItem h3{
+    margin:0 0 5px;
+
+    font-family:'Playfair Display',serif;
+
+    font-size:18px;
+    font-weight:700;
+
+    color:#222;
+}
+
+.homeFeatureItem p{
+    margin:0;
+
+    font-size:12px;
+    line-height:1.5;
+
+    color:#777;
+}
+
+
+/* =========================
+   TABLET
+========================= */
+
+@media(max-width:991px){
+
+    .homeFeatures{
+        grid-template-columns:repeat(2,1fr);
+        padding:30px 5%;
+    }
+
+    .homeFeatureItem{
+        padding:20px;
+    }
+
+    .homeFeatureItem:nth-child(2){
+        border-right:none;
+    }
+
+    .homeFeatureItem:nth-child(-n+2){
+        border-bottom:1px solid rgba(0,0,0,.08);
+    }
+
+}
+
+
+/* =========================
+   MOBILE
+========================= */
+
+@media(max-width:600px){
+
+    .homeFeatures{
+        grid-template-columns:1fr;
+
+        padding:10px 24px;
+    }
+
+    .homeFeatureItem{
+        padding:20px 5px;
+
+        border-right:none;
+        border-bottom:1px solid rgba(0,0,0,.08);
+    }
+
+    .homeFeatureItem:last-child{
+        border-bottom:none;
+    }
+
+    .homeFeatureItem:nth-child(2){
+        border-right:none;
+    }
+
+    .homeFeatureItem:nth-child(-n+2){
+        border-bottom:1px solid rgba(0,0,0,.08);
+    }
+
+    .homeFeatureItem > i{
+        width:44px;
+        height:44px;
+        font-size:18px;
+    }
+
+    .homeFeatureItem h3{
+        font-size:16px;
+    }
+
+    .homeFeatureItem p{
+        font-size:11px;
+    }
+
+}
