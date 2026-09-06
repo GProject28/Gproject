@@ -409,3 +409,20 @@ document.addEventListener("DOMContentLoaded", function(){
 
 });
 
+/* =========================================
+   MOBILE LOGO → HOME
+========================================= */
+
+document.addEventListener("DOMContentLoaded", function(){
+
+    const mobileLogo = document.querySelector(".mobileLogo");
+
+    if(mobileLogo){
+        mobileLogo.style.cursor = "pointer";
+
+        mobileLogo.addEventListener("click", function(){
+            window.location.href = "index.html";
+        });
+    }
+
+});
