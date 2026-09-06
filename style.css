@@ -2304,3 +2304,27 @@ body{
     }
 
 }
+
+/* =========================================================
+   MOBILE HERO ZOOM
+========================================================= */
+
+@media(max-width:768px){
+
+    .heroSlide.active img{
+        animation:heroMobileSlowZoom 3s ease-out forwards;
+    }
+
+}
+
+@keyframes heroMobileSlowZoom{
+
+    from{
+        transform:scale(1);
+    }
+
+    to{
+        transform:scale(1.05);
+    }
+
+}
