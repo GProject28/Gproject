@@ -2917,20 +2917,20 @@ body{
         height:175px !important;
     }
 
-    .storyCollage .storyPhoto4,
-    .storyCollage .storyPhoto5,
-    .storyCollage .storyPhoto6,
-    .storyCollage .storyPhoto7,
-    .storyCollage .storyPhoto8,
-    .storyCollage .storyPhoto9,
-    .storyCollage .storyPhoto10,
-    .storyCollage .storyPhoto11,
-    .storyCollage .storyPhoto12,
-    .storyCollage .storyPhoto13,
-    .storyCollage .storyPhoto14,
-    .storyCollage .storyPhoto15{
-        display:none !important;
-    }
+.storyCollage .storyPhoto4,
+.storyCollage .storyPhoto5,
+.storyCollage .storyPhoto6,
+.storyCollage .storyPhoto7,
+.storyCollage .storyPhoto8,
+.storyCollage .storyPhoto9,
+.storyCollage .storyPhoto10,
+.storyCollage .storyPhoto11,
+.storyCollage .storyPhoto12,
+.storyCollage .storyPhoto13,
+.storyCollage .storyPhoto14,
+.storyCollage .storyPhoto15{
+    display:block !important;
+}
 
     .storyHandText{
         position:absolute !important;
