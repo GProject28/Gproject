@@ -36,7 +36,7 @@ window.addEventListener("load", () => {
 
 const video = document.getElementById("btsVideo");
 const playBtn = document.getElementById("playVideo");
-const overlay = document.querySelector(".videoOverlay");
+const overlay = document.querySelector(".behindVideoOverlay");
 
 if (video && playBtn) {
 
