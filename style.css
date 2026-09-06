@@ -2771,3 +2771,139 @@ body{
 
     z-index:5;
 }
+
+/* =========================================================
+   OUR STORY — TEXT BESIDE COLLAGE
+========================================================= */
+
+.homeStory{
+    display:grid !important;
+    grid-template-columns:520px minmax(0, 1fr) !important;
+    align-items:center !important;
+    justify-content:center !important;
+    gap:70px !important;
+
+    width:100% !important;
+    max-width:1400px !important;
+
+    margin:0 auto !important;
+    padding:30px 5% 80px !important;
+
+    background:#fff;
+}
+
+.storyCollage{
+    position:relative !important;
+    width:520px !important;
+    height:470px !important;
+
+    flex:none !important;
+    margin:0 !important;
+}
+
+.storyContent{
+    display:block !important;
+
+    width:100% !important;
+    max-width:600px !important;
+
+    margin:0 !important;
+    padding:0 !important;
+
+    text-align:left !important;
+    visibility:visible !important;
+    opacity:1 !important;
+}
+
+.storyEyebrow{
+    display:block !important;
+
+    margin-bottom:14px !important;
+
+    color:#C8A46A !important;
+
+    font-size:11px !important;
+    font-weight:700 !important;
+    letter-spacing:5px !important;
+}
+
+.storyContent h2{
+    display:block !important;
+
+    margin:0 0 18px !important;
+
+    font-family:'Playfair Display',serif !important;
+    font-size:42px !important;
+    line-height:1.08 !important;
+
+    color:#111 !important;
+}
+
+.storyContent p{
+    display:block !important;
+
+    max-width:570px !important;
+
+    margin:0 0 25px !important;
+
+    color:#555 !important;
+
+    font-size:14px !important;
+    line-height:1.65 !important;
+}
+
+.storyStats{
+    display:flex !important;
+
+    width:100% !important;
+
+    margin:20px 0 25px !important;
+}
+
+.storyStats > div{
+    flex:1 !important;
+    text-align:center !important;
+}
+
+.storyBtn{
+    display:inline-flex !important;
+}
+
+
+/* =========================================================
+   MOBILE
+========================================================= */
+
+@media(max-width:768px){
+
+    .homeStory{
+        display:flex !important;
+        flex-direction:column !important;
+
+        gap:30px !important;
+
+        padding:25px 20px 70px !important;
+    }
+
+    .storyCollage{
+        width:100% !important;
+        max-width:430px !important;
+        height:350px !important;
+    }
+
+    .storyContent{
+        width:100% !important;
+        max-width:600px !important;
+
+        text-align:center !important;
+    }
+
+    .storyContent h2{
+        font-size:32px !important;
+    }
+
+    .storyContent p{
+        font-size:14px !important;
+    }
+
+}
