@@ -3352,65 +3352,48 @@ body{
 
     /* PHOTOS */
 
-    .behindPhoto{
-        position:relative;
-        top:auto !important;
-        right:auto !important;
-        left:auto !important;
-        width:46%;
+     .behindPhoto{
+        position:absolute !important;
+        width:43%;
         padding:7px 7px 20px;
+        z-index:10;
     }
 
-    .behindPhoto img{
-        height:145px;
+    /* Behind1 — upper left */
+    .behindPhoto1{
+        top:310px !important;
+        left:3% !important;
+        right:auto !important;
+        margin:0 !important;
+        transform:rotate(-5deg);
     }
 
-    /* =========================
-   MOBILE BTS PHOTO LAYOUT
-   ========================= */
+    /* Behind2 — upper right */
+    .behindPhoto2{
+        top:310px !important;
+        right:3% !important;
+        left:auto !important;
+        margin:0 !important;
+        transform:rotate(5deg);
+    }
 
-.behindPhoto{
-    position:relative;
-    top:auto !important;
-    right:auto !important;
-    left:auto !important;
-    width:46%;
-    padding:7px 7px 20px;
-}
+    /* Behind3 — lower left */
+    .behindPhoto3{
+        top:700px !important;
+        left:3% !important;
+        right:auto !important;
+        margin:0 !important;
+        transform:rotate(-5deg);
+    }
 
-/* TOP ROW — Behind1 + Behind2 */
-
-.behindPhoto1{
-    display:inline-block;
-    margin:25px 0 0 3%;
-    vertical-align:top;
-    transform:rotate(-5deg);
-}
-
-.behindPhoto2{
-    display:inline-block;
-    margin:5px 3% 0 2%;
-    vertical-align:top;
-    transform:rotate(5deg);
-}
-
-
-/* BOTTOM ROW — Behind3 + Behind4 */
-
-.behindPhoto3{
-    display:inline-block;
-    margin:35px 0 0 3%;
-    vertical-align:top;
-    transform:rotate(-5deg);
-}
-
-.behindPhoto4{
-    display:inline-block;
-    margin:20px 3% 0 2%;
-    vertical-align:top;
-    transform:rotate(5deg);
-}
-
+    /* Behind4 — lower right */
+    .behindPhoto4{
+        top:700px !important;
+        right:3% !important;
+        left:auto !important;
+        margin:0 !important;
+        transform:rotate(5deg);
+    }
 
     /* DECOR */
 
