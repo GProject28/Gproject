@@ -3365,26 +3365,51 @@ body{
         height:145px;
     }
 
-    .behindPhoto1{
-        display:block;
-        margin:-25px 0 0 3%;
-        transform:rotate(-5deg);
-    }
+    /* =========================
+   MOBILE BTS PHOTO LAYOUT
+   ========================= */
 
-    .behindPhoto2{
-        margin:-120px 3% 0 auto;
-        transform:rotate(5deg);
-    }
+.behindPhoto{
+    position:relative;
+    top:auto !important;
+    right:auto !important;
+    left:auto !important;
+    width:46%;
+    padding:7px 7px 20px;
+}
 
-    .behindPhoto3{
-        margin:25px 0 0 3%;
-        transform:rotate(-5deg);
-    }
+/* TOP ROW — Behind1 + Behind2 */
 
-    .behindPhoto4{
-        margin:-120px 3% 0 auto;
-        transform:rotate(5deg);
-    }
+.behindPhoto1{
+    display:inline-block;
+    margin:25px 0 0 3%;
+    vertical-align:top;
+    transform:rotate(-5deg);
+}
+
+.behindPhoto2{
+    display:inline-block;
+    margin:5px 3% 0 2%;
+    vertical-align:top;
+    transform:rotate(5deg);
+}
+
+
+/* BOTTOM ROW — Behind3 + Behind4 */
+
+.behindPhoto3{
+    display:inline-block;
+    margin:35px 0 0 3%;
+    vertical-align:top;
+    transform:rotate(-5deg);
+}
+
+.behindPhoto4{
+    display:inline-block;
+    margin:20px 3% 0 2%;
+    vertical-align:top;
+    transform:rotate(5deg);
+}
 
 
     /* DECOR */
