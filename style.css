@@ -3350,50 +3350,44 @@ body{
     }
 
 
-    /* PHOTOS */
+    .behindPhoto{
+    position:absolute !important;
+    width:42% !important;
+    padding:7px 7px 20px !important;
+    z-index:3 !important;
+}
 
-     .behindPhoto{
-        position:absolute !important;
-        width:43%;
-        padding:7px 7px 20px;
-        z-index:10;
-    }
+/* Behind 1 — upper left */
+.behindPhoto1{
+    top:315px !important;
+    left:0 !important;
+    right:auto !important;
+    transform:rotate(-5deg);
+}
 
-    /* Behind1 — upper left */
-    .behindPhoto1{
-        top:310px !important;
-        left:3% !important;
-        right:auto !important;
-        margin:0 !important;
-        transform:rotate(-5deg);
-    }
+/* Behind 2 — upper right */
+.behindPhoto2{
+    top:315px !important;
+    right:0 !important;
+    left:auto !important;
+    transform:rotate(5deg);
+}
 
-    /* Behind2 — upper right */
-    .behindPhoto2{
-        top:310px !important;
-        right:3% !important;
-        left:auto !important;
-        margin:0 !important;
-        transform:rotate(5deg);
-    }
+/* Behind 3 — lower left */
+.behindPhoto3{
+    top:620px !important;
+    left:0 !important;
+    right:auto !important;
+    transform:rotate(-5deg);
+}
 
-    /* Behind3 — lower left */
-    .behindPhoto3{
-        top:700px !important;
-        left:3% !important;
-        right:auto !important;
-        margin:0 !important;
-        transform:rotate(-5deg);
-    }
-
-    /* Behind4 — lower right */
-    .behindPhoto4{
-        top:700px !important;
-        right:3% !important;
-        left:auto !important;
-        margin:0 !important;
-        transform:rotate(5deg);
-    }
+/* Behind 4 — lower right */
+.behindPhoto4{
+    top:620px !important;
+    right:0 !important;
+    left:auto !important;
+    transform:rotate(5deg);
+}
 
     /* DECOR */
 
